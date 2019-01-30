@@ -34,3 +34,12 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Add/
+Assets/unity-ui-extensions/
+Assets/SWS/
+Assets/RedwoodForest/
+Assets/Oculus/
+Assets/ExampleAssets/
+Assets/Bakery/
+Assets/Editor/x64/Bakery/
+Assets/Demigiant/

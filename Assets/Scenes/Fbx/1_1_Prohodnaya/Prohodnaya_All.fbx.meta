@@ -1,0 +1,549 @@
+fileFormatVersion: 2
+guid: 32cabc025d528b64c80624474d7bb717
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Gate1
+    100002: Gate2
+    100004: Gate3
+    100006: Gate4
+    100008: GateDop1
+    100010: GateDop2
+    100012: GateDop3
+    100014: GateDop4
+    100016: GateGlass1
+    100018: GateGlass1 1
+    100020: GateGlass2
+    100022: GateGlass2 1
+    100024: Proh1
+    100026: Proh2
+    100028: prohBorder1
+    100030: prohBorder2
+    100032: prohFloor_1
+    100034: prohFloor_2
+    100036: prohFloor_3
+    100038: prohMap_svg
+    100040: //RootNode
+    100042: svgLogo
+    100044: svgMapOut
+    100046: svgMesh1
+    100048: txtMash
+    100050: txtObject
+    100052: txtZav
+    100054: txtZiO_Podolsk
+    100056: Win_nar_frame_1
+    100058: Win_nar_frame_1 1
+    100060: Win_nar_frame_1 2
+    100062: Win_nar_frame_1 3
+    100064: Win_nar_frame_1 4
+    100066: Win_nar_frame_1 5
+    100068: Win_nar_glass_1
+    100070: Win_nar_glass_1 1
+    100072: Win_nar_glass_1 2
+    100074: Win_nar_glass_1 3
+    100076: Win_nar_glass_1 4
+    100078: Win_nar_glass_1 5
+    100080: Win_wide_frame_1
+    100082: Win_wide_frame_1 1
+    100084: Win_wide_frame_1 10
+    100086: Win_wide_frame_1 11
+    100088: Win_wide_frame_1 12
+    100090: Win_wide_frame_1 13
+    100092: Win_wide_frame_1 14
+    100094: Win_wide_frame_1 15
+    100096: Win_wide_frame_1 16
+    100098: Win_wide_frame_1 17
+    100100: Win_wide_frame_1 18
+    100102: Win_wide_frame_1 19
+    100104: Win_wide_frame_1 2
+    100106: Win_wide_frame_1 3
+    100108: Win_wide_frame_1 4
+    100110: Win_wide_frame_1 5
+    100112: Win_wide_frame_1 6
+    100114: Win_wide_frame_1 7
+    100116: Win_wide_frame_1 8
+    100118: Win_wide_frame_1 9
+    100120: Win_wide_glass_1
+    100122: Win_wide_glass_1 1
+    100124: Win_wide_glass_1 10
+    100126: Win_wide_glass_1 11
+    100128: Win_wide_glass_1 12
+    100130: Win_wide_glass_1 13
+    100132: Win_wide_glass_1 14
+    100134: Win_wide_glass_1 15
+    100136: Win_wide_glass_1 16
+    100138: Win_wide_glass_1 17
+    100140: Win_wide_glass_1 18
+    100142: Win_wide_glass_1 19
+    100144: Win_wide_glass_1 2
+    100146: Win_wide_glass_1 3
+    100148: Win_wide_glass_1 4
+    100150: Win_wide_glass_1 5
+    100152: Win_wide_glass_1 6
+    100154: Win_wide_glass_1 7
+    100156: Win_wide_glass_1 8
+    100158: Win_wide_glass_1 9
+    100160: Window_narrow2
+    100162: Window_narrow3
+    100164: Window_narrow4
+    100166: Window_narrow5
+    100168: Window_narrow6
+    100170: Window_wide_1
+    100172: Window_wide_2
+    100174: Window_wide_3
+    100176: Window_wide_4
+    100178: Window_wide_5
+    100180: Window_wide_mid_1
+    100182: Window_wide_mid_10
+    100184: Window_wide_mid_11
+    100186: Window_wide_mid_12
+    100188: Window_wide_mid_13
+    100190: Window_wide_mid_14
+    100192: Window_wide_mid_15
+    100194: Window_wide_mid_2
+    100196: Window_wide_mid_3
+    100198: Window_wide_mid_4
+    100200: Window_wide_mid_5
+    100202: Window_wide_mid_6
+    100204: Window_wide_mid_7
+    100206: Window_wide_mid_8
+    100208: Window_wide_mid_9
+    400000: Gate1
+    400002: Gate2
+    400004: Gate3
+    400006: Gate4
+    400008: GateDop1
+    400010: GateDop2
+    400012: GateDop3
+    400014: GateDop4
+    400016: GateGlass1
+    400018: GateGlass1 1
+    400020: GateGlass2
+    400022: GateGlass2 1
+    400024: Proh1
+    400026: Proh2
+    400028: prohBorder1
+    400030: prohBorder2
+    400032: prohFloor_1
+    400034: prohFloor_2
+    400036: prohFloor_3
+    400038: prohMap_svg
+    400040: //RootNode
+    400042: svgLogo
+    400044: svgMapOut
+    400046: svgMesh1
+    400048: txtMash
+    400050: txtObject
+    400052: txtZav
+    400054: txtZiO_Podolsk
+    400056: Win_nar_frame_1
+    400058: Win_nar_frame_1 1
+    400060: Win_nar_frame_1 2
+    400062: Win_nar_frame_1 3
+    400064: Win_nar_frame_1 4
+    400066: Win_nar_frame_1 5
+    400068: Win_nar_glass_1
+    400070: Win_nar_glass_1 1
+    400072: Win_nar_glass_1 2
+    400074: Win_nar_glass_1 3
+    400076: Win_nar_glass_1 4
+    400078: Win_nar_glass_1 5
+    400080: Win_wide_frame_1
+    400082: Win_wide_frame_1 1
+    400084: Win_wide_frame_1 10
+    400086: Win_wide_frame_1 11
+    400088: Win_wide_frame_1 12
+    400090: Win_wide_frame_1 13
+    400092: Win_wide_frame_1 14
+    400094: Win_wide_frame_1 15
+    400096: Win_wide_frame_1 16
+    400098: Win_wide_frame_1 17
+    400100: Win_wide_frame_1 18
+    400102: Win_wide_frame_1 19
+    400104: Win_wide_frame_1 2
+    400106: Win_wide_frame_1 3
+    400108: Win_wide_frame_1 4
+    400110: Win_wide_frame_1 5
+    400112: Win_wide_frame_1 6
+    400114: Win_wide_frame_1 7
+    400116: Win_wide_frame_1 8
+    400118: Win_wide_frame_1 9
+    400120: Win_wide_glass_1
+    400122: Win_wide_glass_1 1
+    400124: Win_wide_glass_1 10
+    400126: Win_wide_glass_1 11
+    400128: Win_wide_glass_1 12
+    400130: Win_wide_glass_1 13
+    400132: Win_wide_glass_1 14
+    400134: Win_wide_glass_1 15
+    400136: Win_wide_glass_1 16
+    400138: Win_wide_glass_1 17
+    400140: Win_wide_glass_1 18
+    400142: Win_wide_glass_1 19
+    400144: Win_wide_glass_1 2
+    400146: Win_wide_glass_1 3
+    400148: Win_wide_glass_1 4
+    400150: Win_wide_glass_1 5
+    400152: Win_wide_glass_1 6
+    400154: Win_wide_glass_1 7
+    400156: Win_wide_glass_1 8
+    400158: Win_wide_glass_1 9
+    400160: Window_narrow2
+    400162: Window_narrow3
+    400164: Window_narrow4
+    400166: Window_narrow5
+    400168: Window_narrow6
+    400170: Window_wide_1
+    400172: Window_wide_2
+    400174: Window_wide_3
+    400176: Window_wide_4
+    400178: Window_wide_5
+    400180: Window_wide_mid_1
+    400182: Window_wide_mid_10
+    400184: Window_wide_mid_11
+    400186: Window_wide_mid_12
+    400188: Window_wide_mid_13
+    400190: Window_wide_mid_14
+    400192: Window_wide_mid_15
+    400194: Window_wide_mid_2
+    400196: Window_wide_mid_3
+    400198: Window_wide_mid_4
+    400200: Window_wide_mid_5
+    400202: Window_wide_mid_6
+    400204: Window_wide_mid_7
+    400206: Window_wide_mid_8
+    400208: Window_wide_mid_9
+    2100000: lambert1
+    2100002: typeBlinn3
+    2100004: typeBlinn4
+    2100006: typeBlinn5
+    2100008: typeBlinn6
+    2100010: svgBlinn4
+    2100012: svgBlinn5
+    2100014: svgBlinn6
+    2100016: svgBlinn7
+    2300000: Gate1
+    2300002: Gate2
+    2300004: Gate3
+    2300006: Gate4
+    2300008: GateDop1
+    2300010: GateDop2
+    2300012: GateDop3
+    2300014: GateDop4
+    2300016: GateGlass1
+    2300018: GateGlass1 1
+    2300020: GateGlass2
+    2300022: GateGlass2 1
+    2300024: Proh1
+    2300026: Proh2
+    2300028: prohBorder1
+    2300030: prohBorder2
+    2300032: prohFloor_1
+    2300034: prohFloor_2
+    2300036: prohFloor_3
+    2300038: prohMap_svg
+    2300040: svgLogo
+    2300042: svgMapOut
+    2300044: svgMesh1
+    2300046: txtMash
+    2300048: txtObject
+    2300050: txtZav
+    2300052: txtZiO_Podolsk
+    2300054: Win_nar_frame_1
+    2300056: Win_nar_frame_1 1
+    2300058: Win_nar_frame_1 2
+    2300060: Win_nar_frame_1 3
+    2300062: Win_nar_frame_1 4
+    2300064: Win_nar_frame_1 5
+    2300066: Win_nar_glass_1
+    2300068: Win_nar_glass_1 1
+    2300070: Win_nar_glass_1 2
+    2300072: Win_nar_glass_1 3
+    2300074: Win_nar_glass_1 4
+    2300076: Win_nar_glass_1 5
+    2300078: Win_wide_frame_1
+    2300080: Win_wide_frame_1 1
+    2300082: Win_wide_frame_1 10
+    2300084: Win_wide_frame_1 11
+    2300086: Win_wide_frame_1 12
+    2300088: Win_wide_frame_1 13
+    2300090: Win_wide_frame_1 14
+    2300092: Win_wide_frame_1 15
+    2300094: Win_wide_frame_1 16
+    2300096: Win_wide_frame_1 17
+    2300098: Win_wide_frame_1 18
+    2300100: Win_wide_frame_1 19
+    2300102: Win_wide_frame_1 2
+    2300104: Win_wide_frame_1 3
+    2300106: Win_wide_frame_1 4
+    2300108: Win_wide_frame_1 5
+    2300110: Win_wide_frame_1 6
+    2300112: Win_wide_frame_1 7
+    2300114: Win_wide_frame_1 8
+    2300116: Win_wide_frame_1 9
+    2300118: Win_wide_glass_1
+    2300120: Win_wide_glass_1 1
+    2300122: Win_wide_glass_1 10
+    2300124: Win_wide_glass_1 11
+    2300126: Win_wide_glass_1 12
+    2300128: Win_wide_glass_1 13
+    2300130: Win_wide_glass_1 14
+    2300132: Win_wide_glass_1 15
+    2300134: Win_wide_glass_1 16
+    2300136: Win_wide_glass_1 17
+    2300138: Win_wide_glass_1 18
+    2300140: Win_wide_glass_1 19
+    2300142: Win_wide_glass_1 2
+    2300144: Win_wide_glass_1 3
+    2300146: Win_wide_glass_1 4
+    2300148: Win_wide_glass_1 5
+    2300150: Win_wide_glass_1 6
+    2300152: Win_wide_glass_1 7
+    2300154: Win_wide_glass_1 8
+    2300156: Win_wide_glass_1 9
+    2300158: //RootNode
+    3300000: Gate1
+    3300002: Gate2
+    3300004: Gate3
+    3300006: Gate4
+    3300008: GateDop1
+    3300010: GateDop2
+    3300012: GateDop3
+    3300014: GateDop4
+    3300016: GateGlass1
+    3300018: GateGlass1 1
+    3300020: GateGlass2
+    3300022: GateGlass2 1
+    3300024: Proh1
+    3300026: Proh2
+    3300028: prohBorder1
+    3300030: prohBorder2
+    3300032: prohFloor_1
+    3300034: prohFloor_2
+    3300036: prohFloor_3
+    3300038: prohMap_svg
+    3300040: svgLogo
+    3300042: svgMapOut
+    3300044: svgMesh1
+    3300046: txtMash
+    3300048: txtObject
+    3300050: txtZav
+    3300052: txtZiO_Podolsk
+    3300054: Win_nar_frame_1
+    3300056: Win_nar_frame_1 1
+    3300058: Win_nar_frame_1 2
+    3300060: Win_nar_frame_1 3
+    3300062: Win_nar_frame_1 4
+    3300064: Win_nar_frame_1 5
+    3300066: Win_nar_glass_1
+    3300068: Win_nar_glass_1 1
+    3300070: Win_nar_glass_1 2
+    3300072: Win_nar_glass_1 3
+    3300074: Win_nar_glass_1 4
+    3300076: Win_nar_glass_1 5
+    3300078: Win_wide_frame_1
+    3300080: Win_wide_frame_1 1
+    3300082: Win_wide_frame_1 10
+    3300084: Win_wide_frame_1 11
+    3300086: Win_wide_frame_1 12
+    3300088: Win_wide_frame_1 13
+    3300090: Win_wide_frame_1 14
+    3300092: Win_wide_frame_1 15
+    3300094: Win_wide_frame_1 16
+    3300096: Win_wide_frame_1 17
+    3300098: Win_wide_frame_1 18
+    3300100: Win_wide_frame_1 19
+    3300102: Win_wide_frame_1 2
+    3300104: Win_wide_frame_1 3
+    3300106: Win_wide_frame_1 4
+    3300108: Win_wide_frame_1 5
+    3300110: Win_wide_frame_1 6
+    3300112: Win_wide_frame_1 7
+    3300114: Win_wide_frame_1 8
+    3300116: Win_wide_frame_1 9
+    3300118: Win_wide_glass_1
+    3300120: Win_wide_glass_1 1
+    3300122: Win_wide_glass_1 10
+    3300124: Win_wide_glass_1 11
+    3300126: Win_wide_glass_1 12
+    3300128: Win_wide_glass_1 13
+    3300130: Win_wide_glass_1 14
+    3300132: Win_wide_glass_1 15
+    3300134: Win_wide_glass_1 16
+    3300136: Win_wide_glass_1 17
+    3300138: Win_wide_glass_1 18
+    3300140: Win_wide_glass_1 19
+    3300142: Win_wide_glass_1 2
+    3300144: Win_wide_glass_1 3
+    3300146: Win_wide_glass_1 4
+    3300148: Win_wide_glass_1 5
+    3300150: Win_wide_glass_1 6
+    3300152: Win_wide_glass_1 7
+    3300154: Win_wide_glass_1 8
+    3300156: Win_wide_glass_1 9
+    3300158: //RootNode
+    4300000: Proh1
+    4300002: Proh2
+    4300004: Gate1
+    4300006: GateGlass1
+    4300008: Gate2
+    4300010: GateGlass2
+    4300012: Gate3
+    4300014: GateGlass2
+    4300016: Gate4
+    4300018: GateGlass1
+    4300020: GateDop1
+    4300022: GateDop2
+    4300024: GateDop3
+    4300026: GateDop4
+    4300028: txtMash
+    4300030: txtZav
+    4300032: txtZiO_Podolsk
+    4300034: txtObject
+    4300036: prohMap_svg
+    4300038: svgMapOut
+    4300040: svgMesh1
+    4300042: svgLogo
+    4300044: Win_nar_frame_1
+    4300046: Win_nar_glass_1
+    4300048: Win_nar_frame_1
+    4300050: Win_nar_glass_1
+    4300052: Win_nar_frame_1
+    4300054: Win_nar_glass_1
+    4300056: Win_nar_frame_1
+    4300058: Win_nar_glass_1
+    4300060: Win_nar_frame_1
+    4300062: Win_nar_glass_1
+    4300064: Win_nar_frame_1
+    4300066: Win_nar_glass_1
+    4300068: Win_wide_frame_1
+    4300070: Win_wide_glass_1
+    4300072: Win_wide_frame_1
+    4300074: Win_wide_glass_1
+    4300076: Win_wide_frame_1
+    4300078: Win_wide_glass_1
+    4300080: Win_wide_frame_1
+    4300082: Win_wide_glass_1
+    4300084: Win_wide_frame_1
+    4300086: Win_wide_glass_1
+    4300088: Win_wide_frame_1
+    4300090: Win_wide_glass_1
+    4300092: Win_wide_frame_1
+    4300094: Win_wide_glass_1
+    4300096: Win_wide_frame_1
+    4300098: Win_wide_glass_1
+    4300100: Win_wide_frame_1
+    4300102: Win_wide_glass_1
+    4300104: Win_wide_frame_1
+    4300106: Win_wide_glass_1
+    4300108: Win_wide_frame_1
+    4300110: Win_wide_glass_1
+    4300112: Win_wide_frame_1
+    4300114: Win_wide_glass_1
+    4300116: Win_wide_frame_1
+    4300118: Win_wide_glass_1
+    4300120: Win_wide_frame_1
+    4300122: Win_wide_glass_1
+    4300124: Win_wide_frame_1
+    4300126: Win_wide_glass_1
+    4300128: Win_wide_frame_1
+    4300130: Win_wide_glass_1
+    4300132: Win_wide_frame_1
+    4300134: Win_wide_glass_1
+    4300136: Win_wide_frame_1
+    4300138: Win_wide_glass_1
+    4300140: Win_wide_frame_1
+    4300142: Win_wide_glass_1
+    4300144: Win_wide_frame_1
+    4300146: Win_wide_glass_1
+    4300148: prohFloor_1
+    4300150: prohBorder1
+    4300152: prohFloor_2
+    4300154: prohBorder2
+    4300156: prohFloor_3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: lit strips glass
+  m_Shader: {fileID: 4800000, guid: 7f5293e531fa80442b042baf4b2c2248, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_B18C2DD5:
+        m_Texture: {fileID: 2800000, guid: 8feb88af7c75e408b9e3ec8f310583ae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C60D3CFD:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_3D5B87B: 0.942
+    - Vector1_46CF2E78: 0
+    - Vector1_C05C6049: 0.25
+    m_Colors:
+    - Color_3B567608: {r: 0, g: 0, b: 0, a: 0}
+    - Color_3B882167: {r: 0, g: 0, b: 0, a: 0}
+    - Color_CF005B7D: {r: 1, g: 1, b: 1, a: 0}
+    - Color_D333D8A: {r: 0, g: 0, b: 0, a: 0}
+    - Vector4_65A4A937: {r: 1, g: 1, b: 0, a: 0}
