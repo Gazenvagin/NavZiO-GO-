@@ -90,11 +90,24 @@ public class CTRL : MonoBehaviour
         
     }
 
-    public void UntouchPath()
+    public void StartTour()
     {
-        splineMgr.Stop();
-        splineMgr.pathContainer = null;
-        rgBody.useGravity = true;
+        RenderSettings.skybox = CTRL_SkyMat.mSkyFly;
+
+        //CTRL_TeleportOnOf.teleportOnOf.enabled = false;
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = false;
+
+        CTRL_FadeCam.fadeCam.delay = 0.15f;
+        CTRL_FadeCam.fadeCam.duration = 2.1f;
+        CTRL_FadeCam.fadeCam.DORestartById("fadeCam");
+        CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
+        CTRL.mainMenu.SetActive(true);
+
+        standartLaser.laserDistance = 2501f;
+        standartLaser.reticleDistance = 3001f;
+
+        capsul.transform.position = respawnSky.position;
+        capsul.transform.rotation = respawnSky.rotation;
     }
 
     public void StartButton1()
