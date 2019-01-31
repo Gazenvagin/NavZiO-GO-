@@ -56,8 +56,8 @@ public class TriggerStopFly : MonoBehaviour
                     RenderSettings.skybox = CTRL_SkyMat.mSkyGround;
 
                     laserCapsul.laserPointer.SetActive(true);
-                    standartLaser.laserDistance = 15f;
-                    standartLaser.reticleDistance = 35f;
+                    standartLaser.laserDistance = 35f;
+                    standartLaser.reticleDistance = 50f;
 
                     spmCapsul.Stop();
                     spmCapsul.pathContainer = null;

@@ -17,7 +17,9 @@ public class CTRL : MonoBehaviour
     [Space(10)]
 
     public GameObject mMenu;
+    public GameObject lgs;
     public static GameObject mainMenu;
+    public static GameObject logos;
 
     [Space(10)]
 
@@ -42,6 +44,7 @@ public class CTRL : MonoBehaviour
     private void OnEnable()
     {
         mainMenu = mMenu;
+        logos = lgs;
     }
 
     #region Start()
@@ -52,12 +55,13 @@ public class CTRL : MonoBehaviour
         CTRL_TeleportOnOf.groundTriggerPlant.enabled = false;
 
         CTRL_FadeCam.fadeCam.delay = 0f;
-        CTRL_FadeCam.fadeCam.duration = 1f;
+        CTRL_FadeCam.fadeCam.duration = 2f;
         CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
 
         RenderSettings.skybox = CTRL_SkyMat.mSkyGround;
 
         mainMenu.SetActive(false);
+        logos.SetActive(false);
 
         laserCapsul = capsul.GetComponent<pointerSwitch>();
         standartLaser = laserCapsul.laserPointer.GetComponent<StandardLaserPointer>();
@@ -101,7 +105,9 @@ public class CTRL : MonoBehaviour
         CTRL_FadeCam.fadeCam.duration = 2.1f;
         CTRL_FadeCam.fadeCam.DORestartById("fadeCam");
         CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
-        CTRL.mainMenu.SetActive(true);
+
+        mainMenu.SetActive(true);
+        logos.SetActive(true);
 
         standartLaser.laserDistance = 2501f;
         standartLaser.reticleDistance = 3001f;
@@ -137,7 +143,8 @@ public class CTRL : MonoBehaviour
         rgBody.useGravity = false;
 
 
-        mMenu.SetActive(false);
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
     }
 
     public void StartButton2()
@@ -166,7 +173,8 @@ public class CTRL : MonoBehaviour
         rgBody.isKinematic = true;
         rgBody.useGravity = false;
 
-        mMenu.SetActive(false);
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
     }
 
     public void StartButton3()
@@ -195,7 +203,8 @@ public class CTRL : MonoBehaviour
         rgBody.isKinematic = true;
         rgBody.useGravity = false;
 
-        mMenu.SetActive(false);
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
     }
 
     public void StartButton4()
@@ -226,10 +235,13 @@ public class CTRL : MonoBehaviour
             points[3].SetActive(true);
         }
 
-        mMenu.SetActive(false);
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
 
         StartCoroutine(Huyak());
     }
+
+    #region Coroutinae butt4
 
     IEnumerator Huyak ()
     {
@@ -246,7 +258,9 @@ public class CTRL : MonoBehaviour
         CTRL_FadeCam.fadeCam.delay = 0.15f;
         CTRL_FadeCam.fadeCam.duration = 2.1f;
         CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
-        CTRL.mainMenu.SetActive(true);
+
+        mainMenu.SetActive(true);
+        logos.SetActive(true);
 
         rgBody.isKinematic = true;
 
@@ -258,6 +272,38 @@ public class CTRL : MonoBehaviour
         capsul.transform.rotation = respawnSky.rotation;
 
         yield break;
+    }
+
+    #endregion
+
+    public void StartButton5()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[4];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[4].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
     }
 
 }

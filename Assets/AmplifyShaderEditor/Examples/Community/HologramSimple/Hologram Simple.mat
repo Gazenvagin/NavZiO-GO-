@@ -30,11 +30,11 @@ Material:
     m_Floats:
     - <noninit>: 1
     - _Intensity: 1
-    - _Opacity: 0.313
-    - _RimPower: 7.9
-    - _ScanLines: 4.42
-    - _Speed: 6.6
+    - _Opacity: 0.077
+    - _RimPower: 4.03
+    - _ScanLines: 7.57
+    - _Speed: 4.3
     - __dirty: 0
     m_Colors:
     - <noninit>: {r: 1, g: 1, b: 1, a: 1}
-    - _Hologramcolor: {r: 0.6926841, g: 0.7953258, b: 0.8113207, a: 0}
+    - _Hologramcolor: {r: 0.29957277, g: 0.32991374, b: 0.33962262, a: 0}

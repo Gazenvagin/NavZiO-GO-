@@ -51,6 +51,7 @@ namespace EasyInputVR.Misc
                     CTRL_FadeCam.fadeCam.DORestartById("fadeCam");
                     CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
                     CTRL.mainMenu.SetActive(true);
+                    CTRL.logos.SetActive(true);
 
                     standartLaser.laserDistance = 2501f;
                     standartLaser.reticleDistance = 3001f;

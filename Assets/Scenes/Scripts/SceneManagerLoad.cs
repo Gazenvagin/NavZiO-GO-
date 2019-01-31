@@ -46,6 +46,6 @@ public class SceneManagerLoad : MonoBehaviour
         //loader.SetActive(false);
         Debug.Log("adios");
 
-        yield break;
+        //yield break;
     }
 }

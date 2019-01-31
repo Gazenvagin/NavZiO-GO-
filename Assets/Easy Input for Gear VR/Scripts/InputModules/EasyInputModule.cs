@@ -76,8 +76,8 @@ namespace UnityEngine.EventSystems
             //UICamera.rect = new Rect(1f, 0f, 1f, 1f);
             UICamera.cullingMask = 0;
             UICamera.fieldOfView = 5;
-            UICamera.nearClipPlane = 0.01f;
-            //UICamera.depth = -1.1f;
+            UICamera.nearClipPlane = 0.1f;
+            //UICamera.depth = -1f;
             //UICamera.farClipPlane = 3000;
 
             // Find canvases in the scene and assign our custom UICamera to them
