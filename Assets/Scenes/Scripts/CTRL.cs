@@ -306,6 +306,40 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    /// <summary>
+    /// Point - 8
+    /// </summary>
+    
+    public void StartButton8()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[7];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[7].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
 }
 
 /*

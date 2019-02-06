@@ -64,7 +64,7 @@ public class TriggerStopFly : MonoBehaviour
 
                     rigCapsul.isKinematic = true;
                     capsul.transform.localPosition = CTRLtriggersPoints.point[i].transform.localPosition;
-                    capsul.transform.rotation = Quaternion.Euler(0, 180, 0);
+                    capsul.transform.localRotation = CTRLtriggersPoints.point[i].transform.localRotation;
 
 
                     Debug.Log("хуяк point");

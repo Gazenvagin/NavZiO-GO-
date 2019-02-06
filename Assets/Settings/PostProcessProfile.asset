@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 114571231941962002}
   - {fileID: 114252324386167986}
   - {fileID: 114944936441376708}
-  - {fileID: 114199139276984138}
---- !u!114 &114199139276984138
+  - {fileID: 114245390179504992}
+--- !u!114 &114245390179504992
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34,20 +34,20 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   filtering:
-    overrideState: 1
-    value: {x: 50.730797, y: 95.73079}
+    overrideState: 0
+    value: {x: 50, y: 95}
   minLuminance:
-    overrideState: 1
-    value: 0.33
+    overrideState: 0
+    value: 0
   maxLuminance:
     overrideState: 0
-    value: 0.5
+    value: 0
   keyValue:
-    overrideState: 1
+    overrideState: 0
     value: 1
   eyeAdaptation:
     overrideState: 0
-    value: 1
+    value: 0
   speedUp:
     overrideState: 0
     value: 2
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -208,7 +208,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 0.8350658, y: 0.8461144, z: 1, w: 0}
+    value: {x: 1, y: 0.91072214, z: 0.7260552, w: 0}
   gain:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
