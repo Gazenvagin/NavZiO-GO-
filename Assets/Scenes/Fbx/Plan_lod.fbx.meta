@@ -1,22 +1,14 @@
 fileFormatVersion: 2
-guid: a951ddb820fadf4438e053d44878bca7
+guid: 17a03f1314a13b0409586643b7dc21b1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Box71
-    100004: Boxes
     400000: //RootNode
-    400002: Box71
-    400004: Boxes
-    2100000: lambert1
-    2100002: lambert2
+    2100000: lambert2
     2300000: //RootNode
-    2300002: Box71
     3300000: //RootNode
-    3300002: Box71
-    4300000: Box71
-    4300002: Plan_top
+    4300000: Plan_top
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -79,7 +71,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

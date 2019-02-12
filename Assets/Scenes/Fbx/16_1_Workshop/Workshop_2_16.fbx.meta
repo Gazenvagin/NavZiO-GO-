@@ -1,22 +1,86 @@
 fileFormatVersion: 2
-guid: a951ddb820fadf4438e053d44878bca7
+guid: bf2d4670f13927f4292f2d3114bb57c7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box71
-    100004: Boxes
-    400000: //RootNode
-    400002: Box71
-    400004: Boxes
+    100000: Door5
+    100002: Win_nar_frame_1
+    100004: Win_nar_glass_1
+    100006: Win_nar_glass_3
+    100008: Win_nar_glass_4
+    100010: Win_nar_glass_5
+    100012: Win_nar_glass_6
+    100014: Win_nar_glass_7
+    100016: Win_wrk_fr_gird1
+    100018: Win_wrk_gird10
+    100020: Win_wrk_gird11
+    100022: Win_wrk_gird12
+    100024: Win_wrk_gird13
+    100026: Win_wrk_gird14
+    100028: Win_wrk_gird2
+    100030: Win_wrk_gird3
+    100032: Win_wrk_gird4
+    100034: Win_wrk_gird5
+    100036: //RootNode
+    400000: Door5
+    400002: Win_nar_frame_1
+    400004: Win_nar_glass_1
+    400006: Win_nar_glass_3
+    400008: Win_nar_glass_4
+    400010: Win_nar_glass_5
+    400012: Win_nar_glass_6
+    400014: Win_nar_glass_7
+    400016: Win_wrk_fr_gird1
+    400018: Win_wrk_gird10
+    400020: Win_wrk_gird11
+    400022: Win_wrk_gird12
+    400024: Win_wrk_gird13
+    400026: Win_wrk_gird14
+    400028: Win_wrk_gird2
+    400030: Win_wrk_gird3
+    400032: Win_wrk_gird4
+    400034: Win_wrk_gird5
+    400036: //RootNode
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    2300002: Box71
-    3300000: //RootNode
-    3300002: Box71
-    4300000: Box71
-    4300002: Plan_top
+    2300000: Win_nar_frame_1
+    2300002: Win_nar_glass_1
+    2300004: Win_nar_glass_3
+    2300006: Win_nar_glass_4
+    2300008: Win_nar_glass_5
+    2300010: Win_nar_glass_6
+    2300012: Win_nar_glass_7
+    2300014: Win_wrk_fr_gird1
+    2300016: Win_wrk_gird2
+    2300018: Win_wrk_gird3
+    2300020: Win_wrk_gird4
+    2300022: Win_wrk_gird5
+    2300024: //RootNode
+    3300000: Win_nar_frame_1
+    3300002: Win_nar_glass_1
+    3300004: Win_nar_glass_3
+    3300006: Win_nar_glass_4
+    3300008: Win_nar_glass_5
+    3300010: Win_nar_glass_6
+    3300012: Win_nar_glass_7
+    3300014: Win_wrk_fr_gird1
+    3300016: Win_wrk_gird2
+    3300018: Win_wrk_gird3
+    3300020: Win_wrk_gird4
+    3300022: Win_wrk_gird5
+    3300024: //RootNode
+    4300000: WORKSHOP_2_16
+    4300002: Win_wrk_gird5
+    4300004: Win_nar_glass_7
+    4300006: Win_wrk_gird4
+    4300008: Win_nar_glass_6
+    4300010: Win_wrk_gird3
+    4300012: Win_nar_glass_5
+    4300014: Win_wrk_gird2
+    4300016: Win_nar_glass_4
+    4300018: Win_nar_glass_3
+    4300020: Win_wrk_fr_gird1
+    4300022: Win_nar_frame_1
+    4300024: Win_nar_glass_1
   externalObjects: {}
   materials:
     importMaterials: 1

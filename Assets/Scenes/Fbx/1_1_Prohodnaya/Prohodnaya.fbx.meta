@@ -246,6 +246,7 @@ ModelImporter:
     100480: Window_wide_7
     100482: Window_wide_8
     100484: Window_wide_9
+    100486: ProhStairs
     400000: //RootNode
     400002: Gate1
     400004: Gate2
@@ -489,6 +490,7 @@ ModelImporter:
     400480: Window_wide_7
     400482: Window_wide_8
     400484: Window_wide_9
+    400486: ProhStairs
     2100000: lambert3
     2100002: svgBlinn5
     2100004: typeBlinn6
@@ -669,6 +671,7 @@ ModelImporter:
     2300332: Win_wide_glass_1 7
     2300334: Win_wide_glass_1 8
     2300336: Win_wide_glass_1 9
+    2300338: ProhStairs
     3300000: //RootNode
     3300002: Gate1
     3300004: Gate2
@@ -838,6 +841,7 @@ ModelImporter:
     3300332: Win_wide_glass_1 7
     3300334: Win_wide_glass_1 8
     3300336: Win_wide_glass_1 9
+    3300338: ProhStairs
     4300000: Prohodnaya
     4300002: svgMapOut
     4300004: txtObject
@@ -1007,6 +1011,7 @@ ModelImporter:
     4300332: Win_nar_glass_1
     4300334: Win_nar_frame_1
     4300336: Win_nar_glass_1
+    4300338: ProhStairs
   externalObjects: {}
   materials:
     importMaterials: 1

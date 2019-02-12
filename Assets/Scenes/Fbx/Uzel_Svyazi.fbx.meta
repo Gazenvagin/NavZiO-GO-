@@ -226,6 +226,7 @@ ModelImporter:
     100440: Window_wide_124
     100442: Window_wide_125
     100444: Window_wide_126
+    100446: Gate_wrk4
     400000: //RootNode
     400002: Win_nar_frame_1
     400004: Win_nar_frame_1 1
@@ -449,6 +450,7 @@ ModelImporter:
     400440: Window_wide_124
     400442: Window_wide_125
     400444: Window_wide_126
+    400446: Gate_wrk4
     2100000: lambert1
     2300000: //RootNode
     2300002: Win_nar_frame_1
@@ -597,6 +599,7 @@ ModelImporter:
     2300288: Win_wide_glass_1 7
     2300290: Win_wide_glass_1 8
     2300292: Win_wide_glass_1 9
+    2300294: Gate_wrk4
     3300000: //RootNode
     3300002: Win_nar_frame_1
     3300004: Win_nar_frame_1 1
@@ -744,6 +747,7 @@ ModelImporter:
     3300288: Win_wide_glass_1 7
     3300290: Win_wide_glass_1 8
     3300292: Win_wide_glass_1 9
+    3300294: Gate_wrk4
     4300000: Uzel_Svyazi
     4300002: Win_nar_frame_1
     4300004: Win_nar_glass_1
@@ -891,6 +895,7 @@ ModelImporter:
     4300288: Win_wide_glass_1
     4300290: Win_nar_frame_1
     4300292: Win_nar_glass_1
+    4300294: Gate_wrk4
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -953,7 +958,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

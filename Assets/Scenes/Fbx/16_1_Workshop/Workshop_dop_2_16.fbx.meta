@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 800d7ffbdae030e418ed5b0d4b1e6390
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door3
+    100002: Win_nar_frame_1
+    100004: Win_nar_frame_1 1
+    100006: Win_nar_frame_1 2
+    100008: Win_nar_frame_1 3
+    100010: Win_nar_frame_1 4
+    100012: Win_nar_frame_1 5
+    100014: Win_nar_frame_1 6
+    100016: Win_nar_frame_1 7
+    100018: Win_nar_frame_1 8
+    100020: Win_nar_frame_1 9
+    100022: Win_nar_glass_1
+    100024: Win_nar_glass_1 1
+    100026: Win_nar_glass_1 2
+    100028: Win_nar_glass_1 3
+    100030: Win_nar_glass_1 4
+    100032: Win_nar_glass_1 5
+    100034: Win_nar_glass_1 6
+    100036: Win_nar_glass_1 7
+    100038: Win_nar_glass_1 8
+    100040: Win_nar_glass_1 9
+    100042: Window_narrow182
+    100044: Window_narrow183
+    100046: Window_narrow184
+    100048: Window_narrow185
+    100050: Window_narrow186
+    100052: Window_narrow187
+    100054: Window_narrow188
+    100056: Window_narrow189
+    100058: Window_narrow190
+    100060: //RootNode
+    400000: Door3
+    400002: Win_nar_frame_1
+    400004: Win_nar_frame_1 1
+    400006: Win_nar_frame_1 2
+    400008: Win_nar_frame_1 3
+    400010: Win_nar_frame_1 4
+    400012: Win_nar_frame_1 5
+    400014: Win_nar_frame_1 6
+    400016: Win_nar_frame_1 7
+    400018: Win_nar_frame_1 8
+    400020: Win_nar_frame_1 9
+    400022: Win_nar_glass_1
+    400024: Win_nar_glass_1 1
+    400026: Win_nar_glass_1 2
+    400028: Win_nar_glass_1 3
+    400030: Win_nar_glass_1 4
+    400032: Win_nar_glass_1 5
+    400034: Win_nar_glass_1 6
+    400036: Win_nar_glass_1 7
+    400038: Win_nar_glass_1 8
+    400040: Win_nar_glass_1 9
+    400042: Window_narrow182
+    400044: Window_narrow183
+    400046: Window_narrow184
+    400048: Window_narrow185
+    400050: Window_narrow186
+    400052: Window_narrow187
+    400054: Window_narrow188
+    400056: Window_narrow189
+    400058: Window_narrow190
+    400060: //RootNode
+    2100000: lambert1
+    2300000: Win_nar_frame_1
+    2300002: Win_nar_frame_1 1
+    2300004: Win_nar_frame_1 2
+    2300006: Win_nar_frame_1 3
+    2300008: Win_nar_frame_1 4
+    2300010: Win_nar_frame_1 5
+    2300012: Win_nar_frame_1 6
+    2300014: Win_nar_frame_1 7
+    2300016: Win_nar_frame_1 8
+    2300018: Win_nar_frame_1 9
+    2300020: Win_nar_glass_1
+    2300022: Win_nar_glass_1 1
+    2300024: Win_nar_glass_1 2
+    2300026: Win_nar_glass_1 3
+    2300028: Win_nar_glass_1 4
+    2300030: Win_nar_glass_1 5
+    2300032: Win_nar_glass_1 6
+    2300034: Win_nar_glass_1 7
+    2300036: Win_nar_glass_1 8
+    2300038: Win_nar_glass_1 9
+    2300040: //RootNode
+    3300000: Win_nar_frame_1
+    3300002: Win_nar_frame_1 1
+    3300004: Win_nar_frame_1 2
+    3300006: Win_nar_frame_1 3
+    3300008: Win_nar_frame_1 4
+    3300010: Win_nar_frame_1 5
+    3300012: Win_nar_frame_1 6
+    3300014: Win_nar_frame_1 7
+    3300016: Win_nar_frame_1 8
+    3300018: Win_nar_frame_1 9
+    3300020: Win_nar_glass_1
+    3300022: Win_nar_glass_1 1
+    3300024: Win_nar_glass_1 2
+    3300026: Win_nar_glass_1 3
+    3300028: Win_nar_glass_1 4
+    3300030: Win_nar_glass_1 5
+    3300032: Win_nar_glass_1 6
+    3300034: Win_nar_glass_1 7
+    3300036: Win_nar_glass_1 8
+    3300038: Win_nar_glass_1 9
+    3300040: //RootNode
+    4300000: Workshop_dop_2_16
+    4300002: Win_nar_frame_1
+    4300004: Win_nar_glass_1
+    4300006: Win_nar_frame_1
+    4300008: Win_nar_glass_1
+    4300010: Win_nar_frame_1
+    4300012: Win_nar_glass_1
+    4300014: Win_nar_frame_1
+    4300016: Win_nar_glass_1
+    4300018: Win_nar_frame_1
+    4300020: Win_nar_glass_1
+    4300022: Win_nar_frame_1
+    4300024: Win_nar_glass_1
+    4300026: Win_nar_frame_1
+    4300028: Win_nar_glass_1
+    4300030: Win_nar_frame_1
+    4300032: Win_nar_glass_1
+    4300034: Win_nar_frame_1
+    4300036: Win_nar_glass_1
+    4300038: Win_nar_frame_1
+    4300040: Win_nar_glass_1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
