@@ -1,18 +1,50 @@
 fileFormatVersion: 2
-guid: 8f2c4f07bc50a9f479c146a8b5aa9290
+guid: df0b832ec3cd4e04e8fdf6d9f0bb32c5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box72
-    400000: //RootNode
-    400002: Box72
+    100000: Door17
+    100002: //RootNode
+    100004: Win_nar_frame_1
+    100006: Win_nar_frame_1 1
+    100008: Win_nar_frame_1 2
+    100010: Win_nar_glass_1
+    100012: Win_nar_glass_1 1
+    100014: Win_nar_glass_1 2
+    100016: Window_narrow277
+    100018: Window_narrow278
+    400000: Door17
+    400002: //RootNode
+    400004: Win_nar_frame_1
+    400006: Win_nar_frame_1 1
+    400008: Win_nar_frame_1 2
+    400010: Win_nar_glass_1
+    400012: Win_nar_glass_1 1
+    400014: Win_nar_glass_1 2
+    400016: Window_narrow277
+    400018: Window_narrow278
     2100000: lambert1
     2300000: //RootNode
-    2300002: Box72
+    2300002: Win_nar_frame_1
+    2300004: Win_nar_frame_1 1
+    2300006: Win_nar_frame_1 2
+    2300008: Win_nar_glass_1
+    2300010: Win_nar_glass_1 1
+    2300012: Win_nar_glass_1 2
     3300000: //RootNode
-    3300002: Box72
-    4300000: Box72
+    3300002: Win_nar_frame_1
+    3300004: Win_nar_frame_1 1
+    3300006: Win_nar_frame_1 2
+    3300008: Win_nar_glass_1
+    3300010: Win_nar_glass_1 1
+    3300012: Win_nar_glass_1 2
+    4300000: UZEL_dop
+    4300002: Win_nar_frame_1
+    4300004: Win_nar_glass_1
+    4300006: Win_nar_frame_1
+    4300008: Win_nar_glass_1
+    4300010: Win_nar_frame_1
+    4300012: Win_nar_glass_1
   externalObjects: {}
   materials:
     importMaterials: 1
