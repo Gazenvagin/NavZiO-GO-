@@ -370,6 +370,107 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    /// <summary>
+    /// Point - 9
+    /// </summary>
+
+    public void StartButton9()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[8];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[8].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    /// <summary>
+    /// Point - 10
+    /// </summary>
+
+    public void StartButton10()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[9];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[9].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    /// <summary>
+    /// Point - 11
+    /// </summary>
+
+    public void StartButton11()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[10];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[10].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
 }
 
 /*
