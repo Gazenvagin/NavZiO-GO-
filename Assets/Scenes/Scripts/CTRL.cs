@@ -116,6 +116,12 @@ public class CTRL : MonoBehaviour
         capsul.transform.rotation = respawnSky.rotation;
     }
 
+    /// <summary>
+    /// Point - 1
+    /// </summary>
+
+    #region Button-1
+
     public void StartButton1()
     {
         CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
@@ -147,6 +153,14 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
+    /// <summary>
+    /// Point - 2
+    /// </summary>
+
+    #region Button-2
+
     public void StartButton2()
     {
         CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
@@ -176,6 +190,14 @@ public class CTRL : MonoBehaviour
         mainMenu.SetActive(false);
         logos.SetActive(false);
     }
+
+    #endregion
+
+    /// <summary>
+    /// Point - 3
+    /// </summary>
+
+    #region Button-3
 
     public void StartButton3()
     {
@@ -207,18 +229,21 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
+    /// <summary>
+    /// Point - 4
+    /// </summary>
+
+    #region Button-4
+
     public void StartButton4()
     {
-        //CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
-
-        soundPlayer.Play();
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
 
         laserCapsul.laserPointer.SetActive(false);
 
-        pointMgr = 1;
-
-        rgBody.isKinematic = false;
-        rgBody.useGravity = true;
+        pointMgr = 0;
 
         splineMgr.pathContainer = pathMgr[3];
         splineMgr.startPoint = pointMgr;
@@ -226,7 +251,7 @@ public class CTRL : MonoBehaviour
         splineMgr.moveToPath = true;
         splineMgr.reverse = true;
         splineMgr.speed = speedMgr;
-        splineMgr.easeType = DG.Tweening.Ease.OutBack;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
         splineMgr.StartMove();
 
         for (int i = 0; i < points.Length; i++)
@@ -235,46 +260,20 @@ public class CTRL : MonoBehaviour
             points[3].SetActive(true);
         }
 
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
         mainMenu.SetActive(false);
         logos.SetActive(false);
-
-        StartCoroutine(Huyak());
-    }
-
-    #region Coroutinae butt4
-
-    IEnumerator Huyak ()
-    {
-
-        laserCapsul.laserPointer.SetActive(false);
-
-        yield return new WaitForSeconds(5f);
-
-        RenderSettings.skybox = CTRL_SkyMat.mSkyFly;
-
-        //CTRL_TeleportOnOf.teleportOnOf.enabled = false;
-        CTRL_TeleportOnOf.groundTriggerPlant.enabled = false;
-
-        CTRL_FadeCam.fadeCam.delay = 0.15f;
-        CTRL_FadeCam.fadeCam.duration = 2.1f;
-        CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
-
-        mainMenu.SetActive(true);
-        logos.SetActive(true);
-
-        rgBody.isKinematic = true;
-
-        laserCapsul.laserPointer.SetActive(true);
-        standartLaser.laserDistance = 2501f;
-        standartLaser.reticleDistance = 3001f;
-
-        capsul.transform.position = respawnSky.position;
-        capsul.transform.rotation = respawnSky.rotation;
-
-        yield break;
     }
 
     #endregion
+
+    /// <summary>
+    /// Point - 5
+    /// </summary>
+
+    #region Button-5
 
     public void StartButton5()
     {
@@ -306,6 +305,14 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
+    /// <summary>
+    /// Point - 6
+    /// </summary>
+
+    #region Button-6
+
     public void StartButton6()
     {
         CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
@@ -336,9 +343,51 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
+    /// <summary>
+    /// Point - 7
+    /// </summary>
+
+    #region Button-7
+
+    public void StartButton7()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[6];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[6].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    #endregion
+
     /// <summary>
     /// Point - 8
     /// </summary>
+
+    #region Button-8
 
     public void StartButton8()
     {
@@ -370,9 +419,13 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
     /// <summary>
     /// Point - 9
     /// </summary>
+
+    #region Button-9
 
     public void StartButton9()
     {
@@ -404,9 +457,13 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
     /// <summary>
     /// Point - 10
     /// </summary>
+
+    #region Button-10
 
     public void StartButton10()
     {
@@ -438,9 +495,13 @@ public class CTRL : MonoBehaviour
         logos.SetActive(false);
     }
 
+    #endregion
+
     /// <summary>
     /// Point - 11
     /// </summary>
+
+    #region Button-11
 
     public void StartButton11()
     {
@@ -471,6 +532,114 @@ public class CTRL : MonoBehaviour
         mainMenu.SetActive(false);
         logos.SetActive(false);
     }
+
+    #endregion
+
+    /// <summary>
+    /// Point - 12
+    /// </summary>
+
+    #region Button-12
+
+    public void StartButton12()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[11];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[11].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    #endregion
+
+    #region AAAAA
+    public void StartAAAAA()
+    {
+        //CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        soundPlayer.Play();
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 1;
+
+        rgBody.isKinematic = false;
+        rgBody.useGravity = true;
+
+        splineMgr.pathContainer = pathMgr[12];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.OutBack;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[12].SetActive(true);
+        }
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+
+        StartCoroutine(Huyak());
+    }    
+
+    IEnumerator Huyak()
+    {
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        yield return new WaitForSeconds(5f);
+
+        RenderSettings.skybox = CTRL_SkyMat.mSkyFly;
+
+        //CTRL_TeleportOnOf.teleportOnOf.enabled = false;
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = false;
+
+        CTRL_FadeCam.fadeCam.delay = 0.15f;
+        CTRL_FadeCam.fadeCam.duration = 2.1f;
+        CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
+
+        mainMenu.SetActive(true);
+        logos.SetActive(true);
+
+        rgBody.isKinematic = true;
+
+        laserCapsul.laserPointer.SetActive(true);
+        standartLaser.laserDistance = 2501f;
+        standartLaser.reticleDistance = 3001f;
+
+        capsul.transform.position = respawnSky.position;
+        capsul.transform.rotation = respawnSky.rotation;
+
+        StopCoroutine( Huyak() );
+    }
+
+    #endregion
 }
 
 /*
