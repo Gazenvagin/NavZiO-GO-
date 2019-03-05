@@ -573,6 +573,120 @@ public class CTRL : MonoBehaviour
 
     #endregion
 
+    /// <summary>
+    /// Point - 13
+    /// </summary>
+
+    #region Button-13
+
+    public void StartButton13()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[12];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[12].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    #endregion
+
+    /// <summary>
+    /// Point - 14
+    /// </summary>
+
+    #region Button-14
+
+    public void StartButton14()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[13];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[13].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    #endregion
+
+    /// <summary>
+    /// Point - 15
+    /// </summary>
+
+    #region Button-15
+
+    public void StartButton15()
+    {
+        CTRL_TeleportOnOf.groundTriggerPlant.enabled = true;
+
+        laserCapsul.laserPointer.SetActive(false);
+
+        pointMgr = 0;
+
+        splineMgr.pathContainer = pathMgr[14];
+        splineMgr.startPoint = pointMgr;
+        splineMgr.onStart = true;
+        splineMgr.moveToPath = true;
+        splineMgr.reverse = true;
+        splineMgr.speed = speedMgr;
+        splineMgr.easeType = DG.Tweening.Ease.INTERNAL_Zero;
+        splineMgr.StartMove();
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+            points[14].SetActive(true);
+        }
+
+        rgBody.isKinematic = true;
+        rgBody.useGravity = false;
+
+        mainMenu.SetActive(false);
+        logos.SetActive(false);
+    }
+
+    #endregion
+
     #region AAAAA
     public void StartAAAAA()
     {

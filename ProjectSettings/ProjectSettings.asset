@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.0.5.1
+  bundleVersion: 0.0.5.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -158,7 +158,7 @@ PlayerSettings:
     Android: com.oculusGO.NavZiO
     Standalone: com.oculus.UnitySample
   buildNumber: {}
-  AndroidBundleVersionCode: 17
+  AndroidBundleVersionCode: 18
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
