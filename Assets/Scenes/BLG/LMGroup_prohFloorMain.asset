@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resolution: 512
   bitmask: 1
-  id: 7
+  id: 8
   isImplicit: 0
   area: 0
   totalVertexCount: 0

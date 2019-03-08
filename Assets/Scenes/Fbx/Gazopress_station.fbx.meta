@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: 536d63fce4f2e2d47b409328ec53e4f5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door118
+    100002: Door119
+    100004: Door120
+    100006: Door121
+    100008: Door122
+    100010: //RootNode
+    100012: pCube175
+    100014: Win_nar_frame_1
+    100016: Win_nar_frame_1 1
+    100018: Win_nar_frame_1 2
+    100020: Win_nar_frame_1 3
+    100022: Win_nar_frame_1 4
+    100024: Win_nar_frame_2
+    100026: Win_nar_frame_2 1
+    100028: Win_nar_frame_2 2
+    100030: Win_nar_frame_2 3
+    100032: Win_nar_glass_1
+    100034: Win_nar_glass_1 1
+    100036: Win_nar_glass_1 2
+    100038: Win_nar_glass_1 3
+    100040: Win_nar_glass_1 4
+    100042: Win_nar_glass_2
+    100044: Win_nar_glass_2 1
+    100046: Win_nar_glass_2 2
+    100048: Win_nar_glass_2 3
+    100050: Win_wd_frame_2
+    100052: Win_wd_frame_2 1
+    100054: Win_wd_frame_2 10
+    100056: Win_wd_frame_2 11
+    100058: Win_wd_frame_2 12
+    100060: Win_wd_frame_2 13
+    100062: Win_wd_frame_2 14
+    100064: Win_wd_frame_2 15
+    100066: Win_wd_frame_2 16
+    100068: Win_wd_frame_2 17
+    100070: Win_wd_frame_2 18
+    100072: Win_wd_frame_2 19
+    100074: Win_wd_frame_2 2
+    100076: Win_wd_frame_2 20
+    100078: Win_wd_frame_2 21
+    100080: Win_wd_frame_2 22
+    100082: Win_wd_frame_2 23
+    100084: Win_wd_frame_2 24
+    100086: Win_wd_frame_2 25
+    100088: Win_wd_frame_2 26
+    100090: Win_wd_frame_2 27
+    100092: Win_wd_frame_2 28
+    100094: Win_wd_frame_2 29
+    100096: Win_wd_frame_2 3
+    100098: Win_wd_frame_2 30
+    100100: Win_wd_frame_2 31
+    100102: Win_wd_frame_2 32
+    100104: Win_wd_frame_2 33
+    100106: Win_wd_frame_2 34
+    100108: Win_wd_frame_2 35
+    100110: Win_wd_frame_2 36
+    100112: Win_wd_frame_2 37
+    100114: Win_wd_frame_2 38
+    100116: Win_wd_frame_2 39
+    100118: Win_wd_frame_2 4
+    100120: Win_wd_frame_2 40
+    100122: Win_wd_frame_2 41
+    100124: Win_wd_frame_2 42
+    100126: Win_wd_frame_2 43
+    100128: Win_wd_frame_2 44
+    100130: Win_wd_frame_2 45
+    100132: Win_wd_frame_2 46
+    100134: Win_wd_frame_2 47
+    100136: Win_wd_frame_2 48
+    100138: Win_wd_frame_2 49
+    100140: Win_wd_frame_2 5
+    100142: Win_wd_frame_2 50
+    100144: Win_wd_frame_2 51
+    100146: Win_wd_frame_2 52
+    100148: Win_wd_frame_2 53
+    100150: Win_wd_frame_2 54
+    100152: Win_wd_frame_2 55
+    100154: Win_wd_frame_2 56
+    100156: Win_wd_frame_2 57
+    100158: Win_wd_frame_2 58
+    100160: Win_wd_frame_2 59
+    100162: Win_wd_frame_2 6
+    100164: Win_wd_frame_2 60
+    100166: Win_wd_frame_2 61
+    100168: Win_wd_frame_2 62
+    100170: Win_wd_frame_2 63
+    100172: Win_wd_frame_2 64
+    100174: Win_wd_frame_2 65
+    100176: Win_wd_frame_2 66
+    100178: Win_wd_frame_2 67
+    100180: Win_wd_frame_2 7
+    100182: Win_wd_frame_2 8
+    100184: Win_wd_frame_2 9
+    100186: Win_wd_frame_3
+    100188: Win_wd_frame_3 1
+    100190: Win_wd_frame_3 10
+    100192: Win_wd_frame_3 11
+    100194: Win_wd_frame_3 12
+    100196: Win_wd_frame_3 13
+    100198: Win_wd_frame_3 14
+    100200: Win_wd_frame_3 15
+    100202: Win_wd_frame_3 16
+    100204: Win_wd_frame_3 17
+    100206: Win_wd_frame_3 18
+    100208: Win_wd_frame_3 19
+    100210: Win_wd_frame_3 2
+    100212: Win_wd_frame_3 20
+    100214: Win_wd_frame_3 21
+    100216: Win_wd_frame_3 22
+    100218: Win_wd_frame_3 23
+    100220: Win_wd_frame_3 24
+    100222: Win_wd_frame_3 25
+    100224: Win_wd_frame_3 26
+    100226: Win_wd_frame_3 27
+    100228: Win_wd_frame_3 28
+    100230: Win_wd_frame_3 29
+    100232: Win_wd_frame_3 3
+    100234: Win_wd_frame_3 30
+    100236: Win_wd_frame_3 31
+    100238: Win_wd_frame_3 32
+    100240: Win_wd_frame_3 33
+    100242: Win_wd_frame_3 34
+    100244: Win_wd_frame_3 35
+    100246: Win_wd_frame_3 36
+    100248: Win_wd_frame_3 37
+    100250: Win_wd_frame_3 38
+    100252: Win_wd_frame_3 39
+    100254: Win_wd_frame_3 4
+    100256: Win_wd_frame_3 40
+    100258: Win_wd_frame_3 41
+    100260: Win_wd_frame_3 42
+    100262: Win_wd_frame_3 43
+    100264: Win_wd_frame_3 5
+    100266: Win_wd_frame_3 6
+    100268: Win_wd_frame_3 7
+    100270: Win_wd_frame_3 8
+    100272: Win_wd_frame_3 9
+    100274: Win_wd_frame_4
+    100276: Win_wd_frame_4 1
+    100278: Win_wd_frame_4 10
+    100280: Win_wd_frame_4 11
+    100282: Win_wd_frame_4 12
+    100284: Win_wd_frame_4 13
+    100286: Win_wd_frame_4 2
+    100288: Win_wd_frame_4 3
+    100290: Win_wd_frame_4 4
+    100292: Win_wd_frame_4 5
+    100294: Win_wd_frame_4 6
+    100296: Win_wd_frame_4 7
+    100298: Win_wd_frame_4 8
+    100300: Win_wd_frame_4 9
+    100302: Win_wd_glass_1
+    100304: Win_wd_glass_1 1
+    100306: Win_wd_glass_1 10
+    100308: Win_wd_glass_1 11
+    100310: Win_wd_glass_1 12
+    100312: Win_wd_glass_1 13
+    100314: Win_wd_glass_1 14
+    100316: Win_wd_glass_1 15
+    100318: Win_wd_glass_1 16
+    100320: Win_wd_glass_1 17
+    100322: Win_wd_glass_1 18
+    100324: Win_wd_glass_1 19
+    100326: Win_wd_glass_1 2
+    100328: Win_wd_glass_1 20
+    100330: Win_wd_glass_1 21
+    100332: Win_wd_glass_1 22
+    100334: Win_wd_glass_1 23
+    100336: Win_wd_glass_1 24
+    100338: Win_wd_glass_1 25
+    100340: Win_wd_glass_1 26
+    100342: Win_wd_glass_1 27
+    100344: Win_wd_glass_1 28
+    100346: Win_wd_glass_1 29
+    100348: Win_wd_glass_1 3
+    100350: Win_wd_glass_1 30
+    100352: Win_wd_glass_1 31
+    100354: Win_wd_glass_1 32
+    100356: Win_wd_glass_1 33
+    100358: Win_wd_glass_1 34
+    100360: Win_wd_glass_1 35
+    100362: Win_wd_glass_1 36
+    100364: Win_wd_glass_1 37
+    100366: Win_wd_glass_1 38
+    100368: Win_wd_glass_1 39
+    100370: Win_wd_glass_1 4
+    100372: Win_wd_glass_1 40
+    100374: Win_wd_glass_1 41
+    100376: Win_wd_glass_1 42
+    100378: Win_wd_glass_1 43
+    100380: Win_wd_glass_1 44
+    100382: Win_wd_glass_1 45
+    100384: Win_wd_glass_1 46
+    100386: Win_wd_glass_1 47
+    100388: Win_wd_glass_1 48
+    100390: Win_wd_glass_1 49
+    100392: Win_wd_glass_1 5
+    100394: Win_wd_glass_1 50
+    100396: Win_wd_glass_1 51
+    100398: Win_wd_glass_1 52
+    100400: Win_wd_glass_1 53
+    100402: Win_wd_glass_1 54
+    100404: Win_wd_glass_1 55
+    100406: Win_wd_glass_1 56
+    100408: Win_wd_glass_1 57
+    100410: Win_wd_glass_1 58
+    100412: Win_wd_glass_1 59
+    100414: Win_wd_glass_1 6
+    100416: Win_wd_glass_1 60
+    100418: Win_wd_glass_1 61
+    100420: Win_wd_glass_1 62
+    100422: Win_wd_glass_1 63
+    100424: Win_wd_glass_1 64
+    100426: Win_wd_glass_1 65
+    100428: Win_wd_glass_1 66
+    100430: Win_wd_glass_1 67
+    100432: Win_wd_glass_1 7
+    100434: Win_wd_glass_1 8
+    100436: Win_wd_glass_1 9
+    100438: Win_wrk_195
+    100440: Win_wrk_196
+    100442: Win_wrk_197
+    100444: Win_wrk_198
+    100446: Window_wide1057
+    100448: Window_wide1058
+    100450: Window_wide1059
+    100452: Window_wide1060
+    100454: Window_wide1061
+    100456: Window_wide1062
+    100458: Window_wide1063
+    100460: Window_wide1064
+    100462: Window_wide1065
+    100464: Window_wide1066
+    100466: Window_wide1067
+    100468: Window_wide1068
+    100470: Window_wide1069
+    100472: Window_wide1070
+    100474: Window_wide1071
+    100476: Window_wide1072
+    100478: Window_wide1073
+    100480: Window_wide1074
+    100482: Window_wide1075
+    100484: Window_wide1076
+    100486: Window_wide1077
+    100488: Window_wide1078
+    100490: Window_wide1079
+    100492: Window_wide1080
+    100494: Window_wide1081
+    100496: Window_wide1082
+    100498: Window_wide1083
+    100500: Window_wide1084
+    100502: Window_wide1085
+    100504: Window_wide1086
+    100506: Window_wide1087
+    100508: Window_wide1088
+    100510: Window_wide1089
+    100512: Window_wide1090
+    100514: Window_wide1091
+    100516: Window_wide1092
+    100518: Window_wide1093
+    100520: Window_wide1094
+    100522: Window_wide1095
+    100524: Window_wide1096
+    100526: Window_wide1097
+    100528: Window_wide1098
+    100530: Window_wide1099
+    100532: Window_wide1100
+    100534: Window_wide1101
+    100536: Window_wide1102
+    100538: Window_wide1103
+    100540: Window_wide1104
+    100542: Window_wide1105
+    100544: Window_wide1106
+    100546: Window_wide1107
+    100548: Window_wide1108
+    100550: Window_wide1109
+    100552: Window_wide1110
+    100554: Window_wide1111
+    100556: Window_wide1112
+    100558: Window_wide1113
+    100560: Window_wide1114
+    100562: Window_wide1115
+    100564: Window_wide1116
+    100566: Window_wide1117
+    100568: Window_wide1118
+    100570: Window_wide1119
+    100572: Window_wide1120
+    100574: Window_wide1121
+    100576: Window_wide1122
+    100578: Window_wide1123
+    100580: Window_wide1124
+    400000: Door118
+    400002: Door119
+    400004: Door120
+    400006: Door121
+    400008: Door122
+    400010: //RootNode
+    400012: pCube175
+    400014: Win_nar_frame_1
+    400016: Win_nar_frame_1 1
+    400018: Win_nar_frame_1 2
+    400020: Win_nar_frame_1 3
+    400022: Win_nar_frame_1 4
+    400024: Win_nar_frame_2
+    400026: Win_nar_frame_2 1
+    400028: Win_nar_frame_2 2
+    400030: Win_nar_frame_2 3
+    400032: Win_nar_glass_1
+    400034: Win_nar_glass_1 1
+    400036: Win_nar_glass_1 2
+    400038: Win_nar_glass_1 3
+    400040: Win_nar_glass_1 4
+    400042: Win_nar_glass_2
+    400044: Win_nar_glass_2 1
+    400046: Win_nar_glass_2 2
+    400048: Win_nar_glass_2 3
+    400050: Win_wd_frame_2
+    400052: Win_wd_frame_2 1
+    400054: Win_wd_frame_2 10
+    400056: Win_wd_frame_2 11
+    400058: Win_wd_frame_2 12
+    400060: Win_wd_frame_2 13
+    400062: Win_wd_frame_2 14
+    400064: Win_wd_frame_2 15
+    400066: Win_wd_frame_2 16
+    400068: Win_wd_frame_2 17
+    400070: Win_wd_frame_2 18
+    400072: Win_wd_frame_2 19
+    400074: Win_wd_frame_2 2
+    400076: Win_wd_frame_2 20
+    400078: Win_wd_frame_2 21
+    400080: Win_wd_frame_2 22
+    400082: Win_wd_frame_2 23
+    400084: Win_wd_frame_2 24
+    400086: Win_wd_frame_2 25
+    400088: Win_wd_frame_2 26
+    400090: Win_wd_frame_2 27
+    400092: Win_wd_frame_2 28
+    400094: Win_wd_frame_2 29
+    400096: Win_wd_frame_2 3
+    400098: Win_wd_frame_2 30
+    400100: Win_wd_frame_2 31
+    400102: Win_wd_frame_2 32
+    400104: Win_wd_frame_2 33
+    400106: Win_wd_frame_2 34
+    400108: Win_wd_frame_2 35
+    400110: Win_wd_frame_2 36
+    400112: Win_wd_frame_2 37
+    400114: Win_wd_frame_2 38
+    400116: Win_wd_frame_2 39
+    400118: Win_wd_frame_2 4
+    400120: Win_wd_frame_2 40
+    400122: Win_wd_frame_2 41
+    400124: Win_wd_frame_2 42
+    400126: Win_wd_frame_2 43
+    400128: Win_wd_frame_2 44
+    400130: Win_wd_frame_2 45
+    400132: Win_wd_frame_2 46
+    400134: Win_wd_frame_2 47
+    400136: Win_wd_frame_2 48
+    400138: Win_wd_frame_2 49
+    400140: Win_wd_frame_2 5
+    400142: Win_wd_frame_2 50
+    400144: Win_wd_frame_2 51
+    400146: Win_wd_frame_2 52
+    400148: Win_wd_frame_2 53
+    400150: Win_wd_frame_2 54
+    400152: Win_wd_frame_2 55
+    400154: Win_wd_frame_2 56
+    400156: Win_wd_frame_2 57
+    400158: Win_wd_frame_2 58
+    400160: Win_wd_frame_2 59
+    400162: Win_wd_frame_2 6
+    400164: Win_wd_frame_2 60
+    400166: Win_wd_frame_2 61
+    400168: Win_wd_frame_2 62
+    400170: Win_wd_frame_2 63
+    400172: Win_wd_frame_2 64
+    400174: Win_wd_frame_2 65
+    400176: Win_wd_frame_2 66
+    400178: Win_wd_frame_2 67
+    400180: Win_wd_frame_2 7
+    400182: Win_wd_frame_2 8
+    400184: Win_wd_frame_2 9
+    400186: Win_wd_frame_3
+    400188: Win_wd_frame_3 1
+    400190: Win_wd_frame_3 10
+    400192: Win_wd_frame_3 11
+    400194: Win_wd_frame_3 12
+    400196: Win_wd_frame_3 13
+    400198: Win_wd_frame_3 14
+    400200: Win_wd_frame_3 15
+    400202: Win_wd_frame_3 16
+    400204: Win_wd_frame_3 17
+    400206: Win_wd_frame_3 18
+    400208: Win_wd_frame_3 19
+    400210: Win_wd_frame_3 2
+    400212: Win_wd_frame_3 20
+    400214: Win_wd_frame_3 21
+    400216: Win_wd_frame_3 22
+    400218: Win_wd_frame_3 23
+    400220: Win_wd_frame_3 24
+    400222: Win_wd_frame_3 25
+    400224: Win_wd_frame_3 26
+    400226: Win_wd_frame_3 27
+    400228: Win_wd_frame_3 28
+    400230: Win_wd_frame_3 29
+    400232: Win_wd_frame_3 3
+    400234: Win_wd_frame_3 30
+    400236: Win_wd_frame_3 31
+    400238: Win_wd_frame_3 32
+    400240: Win_wd_frame_3 33
+    400242: Win_wd_frame_3 34
+    400244: Win_wd_frame_3 35
+    400246: Win_wd_frame_3 36
+    400248: Win_wd_frame_3 37
+    400250: Win_wd_frame_3 38
+    400252: Win_wd_frame_3 39
+    400254: Win_wd_frame_3 4
+    400256: Win_wd_frame_3 40
+    400258: Win_wd_frame_3 41
+    400260: Win_wd_frame_3 42
+    400262: Win_wd_frame_3 43
+    400264: Win_wd_frame_3 5
+    400266: Win_wd_frame_3 6
+    400268: Win_wd_frame_3 7
+    400270: Win_wd_frame_3 8
+    400272: Win_wd_frame_3 9
+    400274: Win_wd_frame_4
+    400276: Win_wd_frame_4 1
+    400278: Win_wd_frame_4 10
+    400280: Win_wd_frame_4 11
+    400282: Win_wd_frame_4 12
+    400284: Win_wd_frame_4 13
+    400286: Win_wd_frame_4 2
+    400288: Win_wd_frame_4 3
+    400290: Win_wd_frame_4 4
+    400292: Win_wd_frame_4 5
+    400294: Win_wd_frame_4 6
+    400296: Win_wd_frame_4 7
+    400298: Win_wd_frame_4 8
+    400300: Win_wd_frame_4 9
+    400302: Win_wd_glass_1
+    400304: Win_wd_glass_1 1
+    400306: Win_wd_glass_1 10
+    400308: Win_wd_glass_1 11
+    400310: Win_wd_glass_1 12
+    400312: Win_wd_glass_1 13
+    400314: Win_wd_glass_1 14
+    400316: Win_wd_glass_1 15
+    400318: Win_wd_glass_1 16
+    400320: Win_wd_glass_1 17
+    400322: Win_wd_glass_1 18
+    400324: Win_wd_glass_1 19
+    400326: Win_wd_glass_1 2
+    400328: Win_wd_glass_1 20
+    400330: Win_wd_glass_1 21
+    400332: Win_wd_glass_1 22
+    400334: Win_wd_glass_1 23
+    400336: Win_wd_glass_1 24
+    400338: Win_wd_glass_1 25
+    400340: Win_wd_glass_1 26
+    400342: Win_wd_glass_1 27
+    400344: Win_wd_glass_1 28
+    400346: Win_wd_glass_1 29
+    400348: Win_wd_glass_1 3
+    400350: Win_wd_glass_1 30
+    400352: Win_wd_glass_1 31
+    400354: Win_wd_glass_1 32
+    400356: Win_wd_glass_1 33
+    400358: Win_wd_glass_1 34
+    400360: Win_wd_glass_1 35
+    400362: Win_wd_glass_1 36
+    400364: Win_wd_glass_1 37
+    400366: Win_wd_glass_1 38
+    400368: Win_wd_glass_1 39
+    400370: Win_wd_glass_1 4
+    400372: Win_wd_glass_1 40
+    400374: Win_wd_glass_1 41
+    400376: Win_wd_glass_1 42
+    400378: Win_wd_glass_1 43
+    400380: Win_wd_glass_1 44
+    400382: Win_wd_glass_1 45
+    400384: Win_wd_glass_1 46
+    400386: Win_wd_glass_1 47
+    400388: Win_wd_glass_1 48
+    400390: Win_wd_glass_1 49
+    400392: Win_wd_glass_1 5
+    400394: Win_wd_glass_1 50
+    400396: Win_wd_glass_1 51
+    400398: Win_wd_glass_1 52
+    400400: Win_wd_glass_1 53
+    400402: Win_wd_glass_1 54
+    400404: Win_wd_glass_1 55
+    400406: Win_wd_glass_1 56
+    400408: Win_wd_glass_1 57
+    400410: Win_wd_glass_1 58
+    400412: Win_wd_glass_1 59
+    400414: Win_wd_glass_1 6
+    400416: Win_wd_glass_1 60
+    400418: Win_wd_glass_1 61
+    400420: Win_wd_glass_1 62
+    400422: Win_wd_glass_1 63
+    400424: Win_wd_glass_1 64
+    400426: Win_wd_glass_1 65
+    400428: Win_wd_glass_1 66
+    400430: Win_wd_glass_1 67
+    400432: Win_wd_glass_1 7
+    400434: Win_wd_glass_1 8
+    400436: Win_wd_glass_1 9
+    400438: Win_wrk_195
+    400440: Win_wrk_196
+    400442: Win_wrk_197
+    400444: Win_wrk_198
+    400446: Window_wide1057
+    400448: Window_wide1058
+    400450: Window_wide1059
+    400452: Window_wide1060
+    400454: Window_wide1061
+    400456: Window_wide1062
+    400458: Window_wide1063
+    400460: Window_wide1064
+    400462: Window_wide1065
+    400464: Window_wide1066
+    400466: Window_wide1067
+    400468: Window_wide1068
+    400470: Window_wide1069
+    400472: Window_wide1070
+    400474: Window_wide1071
+    400476: Window_wide1072
+    400478: Window_wide1073
+    400480: Window_wide1074
+    400482: Window_wide1075
+    400484: Window_wide1076
+    400486: Window_wide1077
+    400488: Window_wide1078
+    400490: Window_wide1079
+    400492: Window_wide1080
+    400494: Window_wide1081
+    400496: Window_wide1082
+    400498: Window_wide1083
+    400500: Window_wide1084
+    400502: Window_wide1085
+    400504: Window_wide1086
+    400506: Window_wide1087
+    400508: Window_wide1088
+    400510: Window_wide1089
+    400512: Window_wide1090
+    400514: Window_wide1091
+    400516: Window_wide1092
+    400518: Window_wide1093
+    400520: Window_wide1094
+    400522: Window_wide1095
+    400524: Window_wide1096
+    400526: Window_wide1097
+    400528: Window_wide1098
+    400530: Window_wide1099
+    400532: Window_wide1100
+    400534: Window_wide1101
+    400536: Window_wide1102
+    400538: Window_wide1103
+    400540: Window_wide1104
+    400542: Window_wide1105
+    400544: Window_wide1106
+    400546: Window_wide1107
+    400548: Window_wide1108
+    400550: Window_wide1109
+    400552: Window_wide1110
+    400554: Window_wide1111
+    400556: Window_wide1112
+    400558: Window_wide1113
+    400560: Window_wide1114
+    400562: Window_wide1115
+    400564: Window_wide1116
+    400566: Window_wide1117
+    400568: Window_wide1118
+    400570: Window_wide1119
+    400572: Window_wide1120
+    400574: Window_wide1121
+    400576: Window_wide1122
+    400578: Window_wide1123
+    400580: Window_wide1124
+    2100000: lambert1
+    2300000: //RootNode
+    2300002: pCube175
+    2300004: Win_nar_frame_1
+    2300006: Win_nar_frame_1 1
+    2300008: Win_nar_frame_1 2
+    2300010: Win_nar_frame_1 3
+    2300012: Win_nar_frame_1 4
+    2300014: Win_nar_frame_2
+    2300016: Win_nar_frame_2 1
+    2300018: Win_nar_frame_2 2
+    2300020: Win_nar_frame_2 3
+    2300022: Win_nar_glass_1
+    2300024: Win_nar_glass_1 1
+    2300026: Win_nar_glass_1 2
+    2300028: Win_nar_glass_1 3
+    2300030: Win_nar_glass_1 4
+    2300032: Win_nar_glass_2
+    2300034: Win_nar_glass_2 1
+    2300036: Win_nar_glass_2 2
+    2300038: Win_nar_glass_2 3
+    2300040: Win_wd_frame_2
+    2300042: Win_wd_frame_2 1
+    2300044: Win_wd_frame_2 10
+    2300046: Win_wd_frame_2 11
+    2300048: Win_wd_frame_2 12
+    2300050: Win_wd_frame_2 13
+    2300052: Win_wd_frame_2 14
+    2300054: Win_wd_frame_2 15
+    2300056: Win_wd_frame_2 16
+    2300058: Win_wd_frame_2 17
+    2300060: Win_wd_frame_2 18
+    2300062: Win_wd_frame_2 19
+    2300064: Win_wd_frame_2 2
+    2300066: Win_wd_frame_2 20
+    2300068: Win_wd_frame_2 21
+    2300070: Win_wd_frame_2 22
+    2300072: Win_wd_frame_2 23
+    2300074: Win_wd_frame_2 24
+    2300076: Win_wd_frame_2 25
+    2300078: Win_wd_frame_2 26
+    2300080: Win_wd_frame_2 27
+    2300082: Win_wd_frame_2 28
+    2300084: Win_wd_frame_2 29
+    2300086: Win_wd_frame_2 3
+    2300088: Win_wd_frame_2 30
+    2300090: Win_wd_frame_2 31
+    2300092: Win_wd_frame_2 32
+    2300094: Win_wd_frame_2 33
+    2300096: Win_wd_frame_2 34
+    2300098: Win_wd_frame_2 35
+    2300100: Win_wd_frame_2 36
+    2300102: Win_wd_frame_2 37
+    2300104: Win_wd_frame_2 38
+    2300106: Win_wd_frame_2 39
+    2300108: Win_wd_frame_2 4
+    2300110: Win_wd_frame_2 40
+    2300112: Win_wd_frame_2 41
+    2300114: Win_wd_frame_2 42
+    2300116: Win_wd_frame_2 43
+    2300118: Win_wd_frame_2 44
+    2300120: Win_wd_frame_2 45
+    2300122: Win_wd_frame_2 46
+    2300124: Win_wd_frame_2 47
+    2300126: Win_wd_frame_2 48
+    2300128: Win_wd_frame_2 49
+    2300130: Win_wd_frame_2 5
+    2300132: Win_wd_frame_2 50
+    2300134: Win_wd_frame_2 51
+    2300136: Win_wd_frame_2 52
+    2300138: Win_wd_frame_2 53
+    2300140: Win_wd_frame_2 54
+    2300142: Win_wd_frame_2 55
+    2300144: Win_wd_frame_2 56
+    2300146: Win_wd_frame_2 57
+    2300148: Win_wd_frame_2 58
+    2300150: Win_wd_frame_2 59
+    2300152: Win_wd_frame_2 6
+    2300154: Win_wd_frame_2 60
+    2300156: Win_wd_frame_2 61
+    2300158: Win_wd_frame_2 62
+    2300160: Win_wd_frame_2 63
+    2300162: Win_wd_frame_2 64
+    2300164: Win_wd_frame_2 65
+    2300166: Win_wd_frame_2 66
+    2300168: Win_wd_frame_2 67
+    2300170: Win_wd_frame_2 7
+    2300172: Win_wd_frame_2 8
+    2300174: Win_wd_frame_2 9
+    2300176: Win_wd_frame_3
+    2300178: Win_wd_frame_3 1
+    2300180: Win_wd_frame_3 10
+    2300182: Win_wd_frame_3 11
+    2300184: Win_wd_frame_3 12
+    2300186: Win_wd_frame_3 13
+    2300188: Win_wd_frame_3 14
+    2300190: Win_wd_frame_3 15
+    2300192: Win_wd_frame_3 16
+    2300194: Win_wd_frame_3 17
+    2300196: Win_wd_frame_3 18
+    2300198: Win_wd_frame_3 19
+    2300200: Win_wd_frame_3 2
+    2300202: Win_wd_frame_3 20
+    2300204: Win_wd_frame_3 21
+    2300206: Win_wd_frame_3 22
+    2300208: Win_wd_frame_3 23
+    2300210: Win_wd_frame_3 24
+    2300212: Win_wd_frame_3 25
+    2300214: Win_wd_frame_3 26
+    2300216: Win_wd_frame_3 27
+    2300218: Win_wd_frame_3 28
+    2300220: Win_wd_frame_3 29
+    2300222: Win_wd_frame_3 3
+    2300224: Win_wd_frame_3 30
+    2300226: Win_wd_frame_3 31
+    2300228: Win_wd_frame_3 32
+    2300230: Win_wd_frame_3 33
+    2300232: Win_wd_frame_3 34
+    2300234: Win_wd_frame_3 35
+    2300236: Win_wd_frame_3 36
+    2300238: Win_wd_frame_3 37
+    2300240: Win_wd_frame_3 38
+    2300242: Win_wd_frame_3 39
+    2300244: Win_wd_frame_3 4
+    2300246: Win_wd_frame_3 40
+    2300248: Win_wd_frame_3 41
+    2300250: Win_wd_frame_3 42
+    2300252: Win_wd_frame_3 43
+    2300254: Win_wd_frame_3 5
+    2300256: Win_wd_frame_3 6
+    2300258: Win_wd_frame_3 7
+    2300260: Win_wd_frame_3 8
+    2300262: Win_wd_frame_3 9
+    2300264: Win_wd_frame_4
+    2300266: Win_wd_frame_4 1
+    2300268: Win_wd_frame_4 10
+    2300270: Win_wd_frame_4 11
+    2300272: Win_wd_frame_4 12
+    2300274: Win_wd_frame_4 13
+    2300276: Win_wd_frame_4 2
+    2300278: Win_wd_frame_4 3
+    2300280: Win_wd_frame_4 4
+    2300282: Win_wd_frame_4 5
+    2300284: Win_wd_frame_4 6
+    2300286: Win_wd_frame_4 7
+    2300288: Win_wd_frame_4 8
+    2300290: Win_wd_frame_4 9
+    2300292: Win_wd_glass_1
+    2300294: Win_wd_glass_1 1
+    2300296: Win_wd_glass_1 10
+    2300298: Win_wd_glass_1 11
+    2300300: Win_wd_glass_1 12
+    2300302: Win_wd_glass_1 13
+    2300304: Win_wd_glass_1 14
+    2300306: Win_wd_glass_1 15
+    2300308: Win_wd_glass_1 16
+    2300310: Win_wd_glass_1 17
+    2300312: Win_wd_glass_1 18
+    2300314: Win_wd_glass_1 19
+    2300316: Win_wd_glass_1 2
+    2300318: Win_wd_glass_1 20
+    2300320: Win_wd_glass_1 21
+    2300322: Win_wd_glass_1 22
+    2300324: Win_wd_glass_1 23
+    2300326: Win_wd_glass_1 24
+    2300328: Win_wd_glass_1 25
+    2300330: Win_wd_glass_1 26
+    2300332: Win_wd_glass_1 27
+    2300334: Win_wd_glass_1 28
+    2300336: Win_wd_glass_1 29
+    2300338: Win_wd_glass_1 3
+    2300340: Win_wd_glass_1 30
+    2300342: Win_wd_glass_1 31
+    2300344: Win_wd_glass_1 32
+    2300346: Win_wd_glass_1 33
+    2300348: Win_wd_glass_1 34
+    2300350: Win_wd_glass_1 35
+    2300352: Win_wd_glass_1 36
+    2300354: Win_wd_glass_1 37
+    2300356: Win_wd_glass_1 38
+    2300358: Win_wd_glass_1 39
+    2300360: Win_wd_glass_1 4
+    2300362: Win_wd_glass_1 40
+    2300364: Win_wd_glass_1 41
+    2300366: Win_wd_glass_1 42
+    2300368: Win_wd_glass_1 43
+    2300370: Win_wd_glass_1 44
+    2300372: Win_wd_glass_1 45
+    2300374: Win_wd_glass_1 46
+    2300376: Win_wd_glass_1 47
+    2300378: Win_wd_glass_1 48
+    2300380: Win_wd_glass_1 49
+    2300382: Win_wd_glass_1 5
+    2300384: Win_wd_glass_1 50
+    2300386: Win_wd_glass_1 51
+    2300388: Win_wd_glass_1 52
+    2300390: Win_wd_glass_1 53
+    2300392: Win_wd_glass_1 54
+    2300394: Win_wd_glass_1 55
+    2300396: Win_wd_glass_1 56
+    2300398: Win_wd_glass_1 57
+    2300400: Win_wd_glass_1 58
+    2300402: Win_wd_glass_1 59
+    2300404: Win_wd_glass_1 6
+    2300406: Win_wd_glass_1 60
+    2300408: Win_wd_glass_1 61
+    2300410: Win_wd_glass_1 62
+    2300412: Win_wd_glass_1 63
+    2300414: Win_wd_glass_1 64
+    2300416: Win_wd_glass_1 65
+    2300418: Win_wd_glass_1 66
+    2300420: Win_wd_glass_1 67
+    2300422: Win_wd_glass_1 7
+    2300424: Win_wd_glass_1 8
+    2300426: Win_wd_glass_1 9
+    3300000: //RootNode
+    3300002: pCube175
+    3300004: Win_nar_frame_1
+    3300006: Win_nar_frame_1 1
+    3300008: Win_nar_frame_1 2
+    3300010: Win_nar_frame_1 3
+    3300012: Win_nar_frame_1 4
+    3300014: Win_nar_frame_2
+    3300016: Win_nar_frame_2 1
+    3300018: Win_nar_frame_2 2
+    3300020: Win_nar_frame_2 3
+    3300022: Win_nar_glass_1
+    3300024: Win_nar_glass_1 1
+    3300026: Win_nar_glass_1 2
+    3300028: Win_nar_glass_1 3
+    3300030: Win_nar_glass_1 4
+    3300032: Win_nar_glass_2
+    3300034: Win_nar_glass_2 1
+    3300036: Win_nar_glass_2 2
+    3300038: Win_nar_glass_2 3
+    3300040: Win_wd_frame_2
+    3300042: Win_wd_frame_2 1
+    3300044: Win_wd_frame_2 10
+    3300046: Win_wd_frame_2 11
+    3300048: Win_wd_frame_2 12
+    3300050: Win_wd_frame_2 13
+    3300052: Win_wd_frame_2 14
+    3300054: Win_wd_frame_2 15
+    3300056: Win_wd_frame_2 16
+    3300058: Win_wd_frame_2 17
+    3300060: Win_wd_frame_2 18
+    3300062: Win_wd_frame_2 19
+    3300064: Win_wd_frame_2 2
+    3300066: Win_wd_frame_2 20
+    3300068: Win_wd_frame_2 21
+    3300070: Win_wd_frame_2 22
+    3300072: Win_wd_frame_2 23
+    3300074: Win_wd_frame_2 24
+    3300076: Win_wd_frame_2 25
+    3300078: Win_wd_frame_2 26
+    3300080: Win_wd_frame_2 27
+    3300082: Win_wd_frame_2 28
+    3300084: Win_wd_frame_2 29
+    3300086: Win_wd_frame_2 3
+    3300088: Win_wd_frame_2 30
+    3300090: Win_wd_frame_2 31
+    3300092: Win_wd_frame_2 32
+    3300094: Win_wd_frame_2 33
+    3300096: Win_wd_frame_2 34
+    3300098: Win_wd_frame_2 35
+    3300100: Win_wd_frame_2 36
+    3300102: Win_wd_frame_2 37
+    3300104: Win_wd_frame_2 38
+    3300106: Win_wd_frame_2 39
+    3300108: Win_wd_frame_2 4
+    3300110: Win_wd_frame_2 40
+    3300112: Win_wd_frame_2 41
+    3300114: Win_wd_frame_2 42
+    3300116: Win_wd_frame_2 43
+    3300118: Win_wd_frame_2 44
+    3300120: Win_wd_frame_2 45
+    3300122: Win_wd_frame_2 46
+    3300124: Win_wd_frame_2 47
+    3300126: Win_wd_frame_2 48
+    3300128: Win_wd_frame_2 49
+    3300130: Win_wd_frame_2 5
+    3300132: Win_wd_frame_2 50
+    3300134: Win_wd_frame_2 51
+    3300136: Win_wd_frame_2 52
+    3300138: Win_wd_frame_2 53
+    3300140: Win_wd_frame_2 54
+    3300142: Win_wd_frame_2 55
+    3300144: Win_wd_frame_2 56
+    3300146: Win_wd_frame_2 57
+    3300148: Win_wd_frame_2 58
+    3300150: Win_wd_frame_2 59
+    3300152: Win_wd_frame_2 6
+    3300154: Win_wd_frame_2 60
+    3300156: Win_wd_frame_2 61
+    3300158: Win_wd_frame_2 62
+    3300160: Win_wd_frame_2 63
+    3300162: Win_wd_frame_2 64
+    3300164: Win_wd_frame_2 65
+    3300166: Win_wd_frame_2 66
+    3300168: Win_wd_frame_2 67
+    3300170: Win_wd_frame_2 7
+    3300172: Win_wd_frame_2 8
+    3300174: Win_wd_frame_2 9
+    3300176: Win_wd_frame_3
+    3300178: Win_wd_frame_3 1
+    3300180: Win_wd_frame_3 10
+    3300182: Win_wd_frame_3 11
+    3300184: Win_wd_frame_3 12
+    3300186: Win_wd_frame_3 13
+    3300188: Win_wd_frame_3 14
+    3300190: Win_wd_frame_3 15
+    3300192: Win_wd_frame_3 16
+    3300194: Win_wd_frame_3 17
+    3300196: Win_wd_frame_3 18
+    3300198: Win_wd_frame_3 19
+    3300200: Win_wd_frame_3 2
+    3300202: Win_wd_frame_3 20
+    3300204: Win_wd_frame_3 21
+    3300206: Win_wd_frame_3 22
+    3300208: Win_wd_frame_3 23
+    3300210: Win_wd_frame_3 24
+    3300212: Win_wd_frame_3 25
+    3300214: Win_wd_frame_3 26
+    3300216: Win_wd_frame_3 27
+    3300218: Win_wd_frame_3 28
+    3300220: Win_wd_frame_3 29
+    3300222: Win_wd_frame_3 3
+    3300224: Win_wd_frame_3 30
+    3300226: Win_wd_frame_3 31
+    3300228: Win_wd_frame_3 32
+    3300230: Win_wd_frame_3 33
+    3300232: Win_wd_frame_3 34
+    3300234: Win_wd_frame_3 35
+    3300236: Win_wd_frame_3 36
+    3300238: Win_wd_frame_3 37
+    3300240: Win_wd_frame_3 38
+    3300242: Win_wd_frame_3 39
+    3300244: Win_wd_frame_3 4
+    3300246: Win_wd_frame_3 40
+    3300248: Win_wd_frame_3 41
+    3300250: Win_wd_frame_3 42
+    3300252: Win_wd_frame_3 43
+    3300254: Win_wd_frame_3 5
+    3300256: Win_wd_frame_3 6
+    3300258: Win_wd_frame_3 7
+    3300260: Win_wd_frame_3 8
+    3300262: Win_wd_frame_3 9
+    3300264: Win_wd_frame_4
+    3300266: Win_wd_frame_4 1
+    3300268: Win_wd_frame_4 10
+    3300270: Win_wd_frame_4 11
+    3300272: Win_wd_frame_4 12
+    3300274: Win_wd_frame_4 13
+    3300276: Win_wd_frame_4 2
+    3300278: Win_wd_frame_4 3
+    3300280: Win_wd_frame_4 4
+    3300282: Win_wd_frame_4 5
+    3300284: Win_wd_frame_4 6
+    3300286: Win_wd_frame_4 7
+    3300288: Win_wd_frame_4 8
+    3300290: Win_wd_frame_4 9
+    3300292: Win_wd_glass_1
+    3300294: Win_wd_glass_1 1
+    3300296: Win_wd_glass_1 10
+    3300298: Win_wd_glass_1 11
+    3300300: Win_wd_glass_1 12
+    3300302: Win_wd_glass_1 13
+    3300304: Win_wd_glass_1 14
+    3300306: Win_wd_glass_1 15
+    3300308: Win_wd_glass_1 16
+    3300310: Win_wd_glass_1 17
+    3300312: Win_wd_glass_1 18
+    3300314: Win_wd_glass_1 19
+    3300316: Win_wd_glass_1 2
+    3300318: Win_wd_glass_1 20
+    3300320: Win_wd_glass_1 21
+    3300322: Win_wd_glass_1 22
+    3300324: Win_wd_glass_1 23
+    3300326: Win_wd_glass_1 24
+    3300328: Win_wd_glass_1 25
+    3300330: Win_wd_glass_1 26
+    3300332: Win_wd_glass_1 27
+    3300334: Win_wd_glass_1 28
+    3300336: Win_wd_glass_1 29
+    3300338: Win_wd_glass_1 3
+    3300340: Win_wd_glass_1 30
+    3300342: Win_wd_glass_1 31
+    3300344: Win_wd_glass_1 32
+    3300346: Win_wd_glass_1 33
+    3300348: Win_wd_glass_1 34
+    3300350: Win_wd_glass_1 35
+    3300352: Win_wd_glass_1 36
+    3300354: Win_wd_glass_1 37
+    3300356: Win_wd_glass_1 38
+    3300358: Win_wd_glass_1 39
+    3300360: Win_wd_glass_1 4
+    3300362: Win_wd_glass_1 40
+    3300364: Win_wd_glass_1 41
+    3300366: Win_wd_glass_1 42
+    3300368: Win_wd_glass_1 43
+    3300370: Win_wd_glass_1 44
+    3300372: Win_wd_glass_1 45
+    3300374: Win_wd_glass_1 46
+    3300376: Win_wd_glass_1 47
+    3300378: Win_wd_glass_1 48
+    3300380: Win_wd_glass_1 49
+    3300382: Win_wd_glass_1 5
+    3300384: Win_wd_glass_1 50
+    3300386: Win_wd_glass_1 51
+    3300388: Win_wd_glass_1 52
+    3300390: Win_wd_glass_1 53
+    3300392: Win_wd_glass_1 54
+    3300394: Win_wd_glass_1 55
+    3300396: Win_wd_glass_1 56
+    3300398: Win_wd_glass_1 57
+    3300400: Win_wd_glass_1 58
+    3300402: Win_wd_glass_1 59
+    3300404: Win_wd_glass_1 6
+    3300406: Win_wd_glass_1 60
+    3300408: Win_wd_glass_1 61
+    3300410: Win_wd_glass_1 62
+    3300412: Win_wd_glass_1 63
+    3300414: Win_wd_glass_1 64
+    3300416: Win_wd_glass_1 65
+    3300418: Win_wd_glass_1 66
+    3300420: Win_wd_glass_1 67
+    3300422: Win_wd_glass_1 7
+    3300424: Win_wd_glass_1 8
+    3300426: Win_wd_glass_1 9
+    4300000: Gazokompress_station
+    4300002: Win_wd_glass_1
+    4300004: Win_wd_frame_2
+    4300006: Win_wd_frame_4
+    4300008: Win_wd_glass_1
+    4300010: Win_wd_frame_2
+    4300012: Win_wd_frame_3
+    4300014: Win_wd_glass_1
+    4300016: Win_wd_frame_2
+    4300018: Win_wd_frame_4
+    4300020: Win_wd_glass_1
+    4300022: Win_wd_frame_2
+    4300024: Win_wd_frame_3
+    4300026: Win_wd_glass_1
+    4300028: Win_wd_frame_2
+    4300030: Win_wd_frame_4
+    4300032: Win_wd_glass_1
+    4300034: Win_wd_frame_2
+    4300036: Win_wd_frame_3
+    4300038: Win_wd_glass_1
+    4300040: Win_wd_frame_2
+    4300042: Win_wd_glass_1
+    4300044: Win_wd_frame_2
+    4300046: Win_wd_frame_4
+    4300048: Win_wd_glass_1
+    4300050: Win_wd_frame_2
+    4300052: Win_wd_frame_3
+    4300054: Win_wd_glass_1
+    4300056: Win_wd_frame_2
+    4300058: Win_wd_frame_4
+    4300060: Win_wd_glass_1
+    4300062: Win_wd_frame_2
+    4300064: Win_wd_frame_3
+    4300066: Win_wd_glass_1
+    4300068: Win_wd_frame_2
+    4300070: Win_wd_frame_4
+    4300072: Win_wd_glass_1
+    4300074: Win_wd_frame_2
+    4300076: Win_wd_frame_3
+    4300078: Win_wd_glass_1
+    4300080: Win_wd_frame_2
+    4300082: Win_wd_frame_4
+    4300084: Win_wd_glass_1
+    4300086: Win_wd_frame_2
+    4300088: Win_wd_frame_3
+    4300090: Win_wd_glass_1
+    4300092: Win_wd_frame_2
+    4300094: Win_wd_frame_4
+    4300096: Win_wd_glass_1
+    4300098: Win_wd_frame_2
+    4300100: Win_wd_frame_3
+    4300102: Win_wd_glass_1
+    4300104: Win_wd_frame_2
+    4300106: Win_wd_frame_4
+    4300108: Win_wd_glass_1
+    4300110: Win_wd_frame_2
+    4300112: Win_wd_frame_3
+    4300114: Win_wd_glass_1
+    4300116: Win_wd_frame_2
+    4300118: Win_wd_frame_4
+    4300120: Win_wd_glass_1
+    4300122: Win_wd_frame_2
+    4300124: Win_wd_frame_3
+    4300126: Win_wd_glass_1
+    4300128: Win_wd_frame_2
+    4300130: Win_wd_frame_4
+    4300132: Win_wd_glass_1
+    4300134: Win_wd_frame_2
+    4300136: Win_wd_frame_3
+    4300138: Win_wd_glass_1
+    4300140: Win_wd_frame_2
+    4300142: Win_wd_frame_4
+    4300144: Win_wd_glass_1
+    4300146: Win_wd_frame_2
+    4300148: Win_wd_frame_3
+    4300150: Win_wd_glass_1
+    4300152: Win_wd_frame_2
+    4300154: Win_wd_frame_4
+    4300156: Win_wd_glass_1
+    4300158: Win_wd_frame_2
+    4300160: Win_wd_frame_3
+    4300162: Win_wd_glass_1
+    4300164: Win_wd_frame_2
+    4300166: Win_wd_frame_4
+    4300168: Win_wd_glass_1
+    4300170: Win_wd_frame_2
+    4300172: Win_wd_frame_3
+    4300174: Win_nar_frame_1
+    4300176: Win_nar_glass_1
+    4300178: Win_wd_glass_1
+    4300180: Win_wd_frame_2
+    4300182: Win_wd_glass_1
+    4300184: Win_wd_frame_2
+    4300186: Win_wd_glass_1
+    4300188: Win_wd_frame_2
+    4300190: Win_wd_glass_1
+    4300192: Win_wd_frame_2
+    4300194: Win_nar_frame_1
+    4300196: Win_nar_glass_1
+    4300198: Win_nar_frame_1
+    4300200: Win_nar_glass_1
+    4300202: Win_wd_glass_1
+    4300204: Win_wd_frame_2
+    4300206: Win_wd_frame_3
+    4300208: Win_wd_glass_1
+    4300210: Win_wd_frame_2
+    4300212: Win_wd_frame_3
+    4300214: Win_wd_glass_1
+    4300216: Win_wd_frame_2
+    4300218: Win_wd_frame_3
+    4300220: Win_wd_glass_1
+    4300222: Win_wd_frame_2
+    4300224: Win_wd_frame_3
+    4300226: Win_wd_glass_1
+    4300228: Win_wd_frame_2
+    4300230: Win_wd_frame_3
+    4300232: Win_wd_glass_1
+    4300234: Win_wd_frame_2
+    4300236: Win_wd_frame_3
+    4300238: Win_wd_glass_1
+    4300240: Win_wd_frame_2
+    4300242: Win_wd_frame_3
+    4300244: Win_wd_glass_1
+    4300246: Win_wd_frame_2
+    4300248: Win_wd_frame_3
+    4300250: Win_wd_glass_1
+    4300252: Win_wd_frame_2
+    4300254: Win_wd_frame_3
+    4300256: Win_wd_glass_1
+    4300258: Win_wd_frame_2
+    4300260: Win_wd_frame_3
+    4300262: Win_wd_glass_1
+    4300264: Win_wd_frame_2
+    4300266: Win_wd_frame_3
+    4300268: Win_wd_glass_1
+    4300270: Win_wd_frame_2
+    4300272: Win_wd_frame_3
+    4300274: Win_wd_glass_1
+    4300276: Win_wd_frame_2
+    4300278: Win_wd_frame_3
+    4300280: Win_wd_glass_1
+    4300282: Win_wd_frame_2
+    4300284: Win_wd_frame_3
+    4300286: Win_wd_glass_1
+    4300288: Win_wd_frame_2
+    4300290: Win_wd_frame_3
+    4300292: Win_wd_glass_1
+    4300294: Win_wd_frame_2
+    4300296: Win_wd_glass_1
+    4300298: Win_wd_frame_2
+    4300300: Win_nar_glass_2
+    4300302: Win_nar_frame_2
+    4300304: Win_nar_glass_2
+    4300306: Win_nar_frame_2
+    4300308: pCube175
+    4300310: Win_wd_glass_1
+    4300312: Win_wd_frame_2
+    4300314: Win_wd_frame_3
+    4300316: Win_wd_glass_1
+    4300318: Win_wd_frame_2
+    4300320: Win_wd_frame_3
+    4300322: Win_wd_glass_1
+    4300324: Win_wd_frame_2
+    4300326: Win_wd_frame_3
+    4300328: Win_wd_glass_1
+    4300330: Win_wd_frame_2
+    4300332: Win_wd_frame_3
+    4300334: Win_wd_glass_1
+    4300336: Win_wd_frame_2
+    4300338: Win_wd_frame_3
+    4300340: Win_wd_glass_1
+    4300342: Win_wd_frame_2
+    4300344: Win_wd_frame_3
+    4300346: Win_wd_glass_1
+    4300348: Win_wd_frame_2
+    4300350: Win_wd_frame_3
+    4300352: Win_wd_glass_1
+    4300354: Win_wd_frame_2
+    4300356: Win_wd_frame_3
+    4300358: Win_wd_glass_1
+    4300360: Win_wd_frame_2
+    4300362: Win_wd_frame_3
+    4300364: Win_wd_glass_1
+    4300366: Win_wd_frame_2
+    4300368: Win_wd_frame_3
+    4300370: Win_wd_glass_1
+    4300372: Win_wd_frame_2
+    4300374: Win_wd_frame_3
+    4300376: Win_wd_glass_1
+    4300378: Win_wd_frame_2
+    4300380: Win_wd_frame_3
+    4300382: Win_wd_glass_1
+    4300384: Win_wd_frame_2
+    4300386: Win_wd_frame_3
+    4300388: Win_wd_glass_1
+    4300390: Win_wd_frame_2
+    4300392: Win_wd_frame_3
+    4300394: Win_wd_glass_1
+    4300396: Win_wd_frame_2
+    4300398: Win_wd_frame_3
+    4300400: Win_wd_glass_1
+    4300402: Win_wd_frame_2
+    4300404: Win_nar_frame_1
+    4300406: Win_nar_glass_1
+    4300408: Win_wd_glass_1
+    4300410: Win_wd_frame_2
+    4300412: Win_wd_glass_1
+    4300414: Win_wd_frame_2
+    4300416: Win_nar_frame_1
+    4300418: Win_nar_glass_1
+    4300420: Win_nar_glass_2
+    4300422: Win_nar_frame_2
+    4300424: Win_nar_glass_2
+    4300426: Win_nar_frame_2
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

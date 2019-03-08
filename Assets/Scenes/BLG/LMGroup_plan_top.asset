@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resolution: 1024
   bitmask: 1
-  id: 15
+  id: 31
   isImplicit: 0
   area: 0
   totalVertexCount: 0
   vertexCounter: 0
-  sceneLodLevel: -1
+  sceneLodLevel: 0
   sceneName: 
   containsTerrains: 0
   mode: 1
