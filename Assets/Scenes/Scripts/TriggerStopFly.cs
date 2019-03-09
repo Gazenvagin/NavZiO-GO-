@@ -46,7 +46,7 @@ public class TriggerStopFly : MonoBehaviour
 
                     //CTRL_TeleportOnOf.teleportOnOf.enabled = true;
 
-                    CTRL_FadeCam.fadeCam.duration = 3f;
+                    CTRL_FadeCam.fadeCam.duration = 3.5f;
                     CTRL_FadeCam.fadeCam.DORestartById("fadeCam");
                     CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
 
