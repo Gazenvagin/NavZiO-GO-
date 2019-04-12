@@ -46,7 +46,7 @@ public class TriggerStopFly : MonoBehaviour
 
                     //CTRL_TeleportOnOf.teleportOnOf.enabled = true;
 
-                    CTRL_FadeCam.fadeCam.duration = 3f;
+                    CTRL_FadeCam.fadeCam.duration = 3.5f;
                     CTRL_FadeCam.fadeCam.DORestartById("fadeCam");
                     CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
 
@@ -56,15 +56,15 @@ public class TriggerStopFly : MonoBehaviour
                     RenderSettings.skybox = CTRL_SkyMat.mSkyGround;
 
                     laserCapsul.laserPointer.SetActive(true);
-                    standartLaser.laserDistance = 15f;
-                    standartLaser.reticleDistance = 35f;
+                    standartLaser.laserDistance = 35f;
+                    standartLaser.reticleDistance = 50f;
 
                     spmCapsul.Stop();
                     spmCapsul.pathContainer = null;
 
                     rigCapsul.isKinematic = true;
                     capsul.transform.localPosition = CTRLtriggersPoints.point[i].transform.localPosition;
-                    capsul.transform.rotation = Quaternion.Euler(0, 180, 0);
+                    capsul.transform.localRotation = CTRLtriggersPoints.point[i].transform.localRotation;
 
 
                     Debug.Log("хуяк point");

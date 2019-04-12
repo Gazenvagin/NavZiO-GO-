@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: bd12d316e5bd6d74eac1d23040115930
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door4
+    100002: Win_nar_frame_1
+    100004: Win_nar_frame_2
+    100006: Win_nar_frame_2 1
+    100008: Win_nar_frame_2 10
+    100010: Win_nar_frame_2 11
+    100012: Win_nar_frame_2 12
+    100014: Win_nar_frame_2 13
+    100016: Win_nar_frame_2 14
+    100018: Win_nar_frame_2 15
+    100020: Win_nar_frame_2 16
+    100022: Win_nar_frame_2 17
+    100024: Win_nar_frame_2 18
+    100026: Win_nar_frame_2 19
+    100028: Win_nar_frame_2 2
+    100030: Win_nar_frame_2 20
+    100032: Win_nar_frame_2 21
+    100034: Win_nar_frame_2 22
+    100036: Win_nar_frame_2 23
+    100038: Win_nar_frame_2 24
+    100040: Win_nar_frame_2 25
+    100042: Win_nar_frame_2 26
+    100044: Win_nar_frame_2 27
+    100046: Win_nar_frame_2 28
+    100048: Win_nar_frame_2 29
+    100050: Win_nar_frame_2 3
+    100052: Win_nar_frame_2 30
+    100054: Win_nar_frame_2 31
+    100056: Win_nar_frame_2 32
+    100058: Win_nar_frame_2 33
+    100060: Win_nar_frame_2 34
+    100062: Win_nar_frame_2 35
+    100064: Win_nar_frame_2 36
+    100066: Win_nar_frame_2 37
+    100068: Win_nar_frame_2 38
+    100070: Win_nar_frame_2 39
+    100072: Win_nar_frame_2 4
+    100074: Win_nar_frame_2 40
+    100076: Win_nar_frame_2 41
+    100078: Win_nar_frame_2 42
+    100080: Win_nar_frame_2 43
+    100082: Win_nar_frame_2 44
+    100084: Win_nar_frame_2 45
+    100086: Win_nar_frame_2 46
+    100088: Win_nar_frame_2 47
+    100090: Win_nar_frame_2 48
+    100092: Win_nar_frame_2 49
+    100094: Win_nar_frame_2 5
+    100096: Win_nar_frame_2 50
+    100098: Win_nar_frame_2 51
+    100100: Win_nar_frame_2 52
+    100102: Win_nar_frame_2 53
+    100104: Win_nar_frame_2 6
+    100106: Win_nar_frame_2 7
+    100108: Win_nar_frame_2 8
+    100110: Win_nar_frame_2 9
+    100112: Win_nar_glass_1
+    100114: Win_nar_glass_2
+    100116: Win_nar_glass_2 1
+    100118: Win_nar_glass_2 10
+    100120: Win_nar_glass_2 11
+    100122: Win_nar_glass_2 12
+    100124: Win_nar_glass_2 13
+    100126: Win_nar_glass_2 14
+    100128: Win_nar_glass_2 15
+    100130: Win_nar_glass_2 16
+    100132: Win_nar_glass_2 17
+    100134: Win_nar_glass_2 18
+    100136: Win_nar_glass_2 19
+    100138: Win_nar_glass_2 2
+    100140: Win_nar_glass_2 20
+    100142: Win_nar_glass_2 21
+    100144: Win_nar_glass_2 22
+    100146: Win_nar_glass_2 23
+    100148: Win_nar_glass_2 24
+    100150: Win_nar_glass_2 25
+    100152: Win_nar_glass_2 26
+    100154: Win_nar_glass_2 27
+    100156: Win_nar_glass_2 28
+    100158: Win_nar_glass_2 29
+    100160: Win_nar_glass_2 3
+    100162: Win_nar_glass_2 30
+    100164: Win_nar_glass_2 31
+    100166: Win_nar_glass_2 32
+    100168: Win_nar_glass_2 33
+    100170: Win_nar_glass_2 34
+    100172: Win_nar_glass_2 35
+    100174: Win_nar_glass_2 36
+    100176: Win_nar_glass_2 37
+    100178: Win_nar_glass_2 38
+    100180: Win_nar_glass_2 39
+    100182: Win_nar_glass_2 4
+    100184: Win_nar_glass_2 40
+    100186: Win_nar_glass_2 41
+    100188: Win_nar_glass_2 42
+    100190: Win_nar_glass_2 43
+    100192: Win_nar_glass_2 44
+    100194: Win_nar_glass_2 45
+    100196: Win_nar_glass_2 46
+    100198: Win_nar_glass_2 47
+    100200: Win_nar_glass_2 48
+    100202: Win_nar_glass_2 49
+    100204: Win_nar_glass_2 5
+    100206: Win_nar_glass_2 50
+    100208: Win_nar_glass_2 51
+    100210: Win_nar_glass_2 52
+    100212: Win_nar_glass_2 53
+    100214: Win_nar_glass_2 6
+    100216: Win_nar_glass_2 7
+    100218: Win_nar_glass_2 8
+    100220: Win_nar_glass_2 9
+    100222: Win_nar_glass_3
+    100224: Win_nar_glass_4
+    100226: Win_nar_glass_5
+    100228: Win_nar_glass_6
+    100230: Win_nar_glass_7
+    100232: Win_wrk_1
+    100234: Win_wrk_10
+    100236: Win_wrk_11
+    100238: Win_wrk_12
+    100240: Win_wrk_13
+    100242: Win_wrk_14
+    100244: Win_wrk_15
+    100246: Win_wrk_16
+    100248: Win_wrk_17
+    100250: Win_wrk_18
+    100252: Win_wrk_19
+    100254: Win_wrk_2
+    100256: Win_wrk_20
+    100258: Win_wrk_21
+    100260: Win_wrk_22
+    100262: Win_wrk_23
+    100264: Win_wrk_24
+    100266: Win_wrk_25
+    100268: Win_wrk_26
+    100270: Win_wrk_27
+    100272: Win_wrk_28
+    100274: Win_wrk_29
+    100276: Win_wrk_3
+    100278: Win_wrk_30
+    100280: Win_wrk_31
+    100282: Win_wrk_32
+    100284: Win_wrk_33
+    100286: Win_wrk_34
+    100288: Win_wrk_35
+    100290: Win_wrk_36
+    100292: Win_wrk_37
+    100294: Win_wrk_38
+    100296: Win_wrk_39
+    100298: Win_wrk_4
+    100300: Win_wrk_40
+    100302: Win_wrk_41
+    100304: Win_wrk_42
+    100306: Win_wrk_43
+    100308: Win_wrk_44
+    100310: Win_wrk_45
+    100312: Win_wrk_46
+    100314: Win_wrk_47
+    100316: Win_wrk_48
+    100318: Win_wrk_49
+    100320: Win_wrk_5
+    100322: Win_wrk_50
+    100324: Win_wrk_51
+    100326: Win_wrk_52
+    100328: Win_wrk_53
+    100330: Win_wrk_54
+    100332: Win_wrk_6
+    100334: Win_wrk_7
+    100336: Win_wrk_8
+    100338: Win_wrk_9
+    100340: Win_wrk_fr_gird1
+    100342: Win_wrk_gird1
+    100344: Win_wrk_gird2
+    100346: Win_wrk_gird3
+    100348: Win_wrk_gird4
+    100350: Win_wrk_gird5
+    100352: Win_wrk_gird6
+    100354: Win_wrk_gird7
+    100356: Win_wrk_gird8
+    100358: Win_wrk_gird9
+    100360: //RootNode
+    400000: Door4
+    400002: Win_nar_frame_1
+    400004: Win_nar_frame_2
+    400006: Win_nar_frame_2 1
+    400008: Win_nar_frame_2 10
+    400010: Win_nar_frame_2 11
+    400012: Win_nar_frame_2 12
+    400014: Win_nar_frame_2 13
+    400016: Win_nar_frame_2 14
+    400018: Win_nar_frame_2 15
+    400020: Win_nar_frame_2 16
+    400022: Win_nar_frame_2 17
+    400024: Win_nar_frame_2 18
+    400026: Win_nar_frame_2 19
+    400028: Win_nar_frame_2 2
+    400030: Win_nar_frame_2 20
+    400032: Win_nar_frame_2 21
+    400034: Win_nar_frame_2 22
+    400036: Win_nar_frame_2 23
+    400038: Win_nar_frame_2 24
+    400040: Win_nar_frame_2 25
+    400042: Win_nar_frame_2 26
+    400044: Win_nar_frame_2 27
+    400046: Win_nar_frame_2 28
+    400048: Win_nar_frame_2 29
+    400050: Win_nar_frame_2 3
+    400052: Win_nar_frame_2 30
+    400054: Win_nar_frame_2 31
+    400056: Win_nar_frame_2 32
+    400058: Win_nar_frame_2 33
+    400060: Win_nar_frame_2 34
+    400062: Win_nar_frame_2 35
+    400064: Win_nar_frame_2 36
+    400066: Win_nar_frame_2 37
+    400068: Win_nar_frame_2 38
+    400070: Win_nar_frame_2 39
+    400072: Win_nar_frame_2 4
+    400074: Win_nar_frame_2 40
+    400076: Win_nar_frame_2 41
+    400078: Win_nar_frame_2 42
+    400080: Win_nar_frame_2 43
+    400082: Win_nar_frame_2 44
+    400084: Win_nar_frame_2 45
+    400086: Win_nar_frame_2 46
+    400088: Win_nar_frame_2 47
+    400090: Win_nar_frame_2 48
+    400092: Win_nar_frame_2 49
+    400094: Win_nar_frame_2 5
+    400096: Win_nar_frame_2 50
+    400098: Win_nar_frame_2 51
+    400100: Win_nar_frame_2 52
+    400102: Win_nar_frame_2 53
+    400104: Win_nar_frame_2 6
+    400106: Win_nar_frame_2 7
+    400108: Win_nar_frame_2 8
+    400110: Win_nar_frame_2 9
+    400112: Win_nar_glass_1
+    400114: Win_nar_glass_2
+    400116: Win_nar_glass_2 1
+    400118: Win_nar_glass_2 10
+    400120: Win_nar_glass_2 11
+    400122: Win_nar_glass_2 12
+    400124: Win_nar_glass_2 13
+    400126: Win_nar_glass_2 14
+    400128: Win_nar_glass_2 15
+    400130: Win_nar_glass_2 16
+    400132: Win_nar_glass_2 17
+    400134: Win_nar_glass_2 18
+    400136: Win_nar_glass_2 19
+    400138: Win_nar_glass_2 2
+    400140: Win_nar_glass_2 20
+    400142: Win_nar_glass_2 21
+    400144: Win_nar_glass_2 22
+    400146: Win_nar_glass_2 23
+    400148: Win_nar_glass_2 24
+    400150: Win_nar_glass_2 25
+    400152: Win_nar_glass_2 26
+    400154: Win_nar_glass_2 27
+    400156: Win_nar_glass_2 28
+    400158: Win_nar_glass_2 29
+    400160: Win_nar_glass_2 3
+    400162: Win_nar_glass_2 30
+    400164: Win_nar_glass_2 31
+    400166: Win_nar_glass_2 32
+    400168: Win_nar_glass_2 33
+    400170: Win_nar_glass_2 34
+    400172: Win_nar_glass_2 35
+    400174: Win_nar_glass_2 36
+    400176: Win_nar_glass_2 37
+    400178: Win_nar_glass_2 38
+    400180: Win_nar_glass_2 39
+    400182: Win_nar_glass_2 4
+    400184: Win_nar_glass_2 40
+    400186: Win_nar_glass_2 41
+    400188: Win_nar_glass_2 42
+    400190: Win_nar_glass_2 43
+    400192: Win_nar_glass_2 44
+    400194: Win_nar_glass_2 45
+    400196: Win_nar_glass_2 46
+    400198: Win_nar_glass_2 47
+    400200: Win_nar_glass_2 48
+    400202: Win_nar_glass_2 49
+    400204: Win_nar_glass_2 5
+    400206: Win_nar_glass_2 50
+    400208: Win_nar_glass_2 51
+    400210: Win_nar_glass_2 52
+    400212: Win_nar_glass_2 53
+    400214: Win_nar_glass_2 6
+    400216: Win_nar_glass_2 7
+    400218: Win_nar_glass_2 8
+    400220: Win_nar_glass_2 9
+    400222: Win_nar_glass_3
+    400224: Win_nar_glass_4
+    400226: Win_nar_glass_5
+    400228: Win_nar_glass_6
+    400230: Win_nar_glass_7
+    400232: Win_wrk_1
+    400234: Win_wrk_10
+    400236: Win_wrk_11
+    400238: Win_wrk_12
+    400240: Win_wrk_13
+    400242: Win_wrk_14
+    400244: Win_wrk_15
+    400246: Win_wrk_16
+    400248: Win_wrk_17
+    400250: Win_wrk_18
+    400252: Win_wrk_19
+    400254: Win_wrk_2
+    400256: Win_wrk_20
+    400258: Win_wrk_21
+    400260: Win_wrk_22
+    400262: Win_wrk_23
+    400264: Win_wrk_24
+    400266: Win_wrk_25
+    400268: Win_wrk_26
+    400270: Win_wrk_27
+    400272: Win_wrk_28
+    400274: Win_wrk_29
+    400276: Win_wrk_3
+    400278: Win_wrk_30
+    400280: Win_wrk_31
+    400282: Win_wrk_32
+    400284: Win_wrk_33
+    400286: Win_wrk_34
+    400288: Win_wrk_35
+    400290: Win_wrk_36
+    400292: Win_wrk_37
+    400294: Win_wrk_38
+    400296: Win_wrk_39
+    400298: Win_wrk_4
+    400300: Win_wrk_40
+    400302: Win_wrk_41
+    400304: Win_wrk_42
+    400306: Win_wrk_43
+    400308: Win_wrk_44
+    400310: Win_wrk_45
+    400312: Win_wrk_46
+    400314: Win_wrk_47
+    400316: Win_wrk_48
+    400318: Win_wrk_49
+    400320: Win_wrk_5
+    400322: Win_wrk_50
+    400324: Win_wrk_51
+    400326: Win_wrk_52
+    400328: Win_wrk_53
+    400330: Win_wrk_54
+    400332: Win_wrk_6
+    400334: Win_wrk_7
+    400336: Win_wrk_8
+    400338: Win_wrk_9
+    400340: Win_wrk_fr_gird1
+    400342: Win_wrk_gird1
+    400344: Win_wrk_gird2
+    400346: Win_wrk_gird3
+    400348: Win_wrk_gird4
+    400350: Win_wrk_gird5
+    400352: Win_wrk_gird6
+    400354: Win_wrk_gird7
+    400356: Win_wrk_gird8
+    400358: Win_wrk_gird9
+    400360: //RootNode
+    2100000: lambert1
+    2300000: Win_nar_frame_1
+    2300002: Win_nar_frame_2
+    2300004: Win_nar_frame_2 1
+    2300006: Win_nar_frame_2 10
+    2300008: Win_nar_frame_2 11
+    2300010: Win_nar_frame_2 12
+    2300012: Win_nar_frame_2 13
+    2300014: Win_nar_frame_2 14
+    2300016: Win_nar_frame_2 15
+    2300018: Win_nar_frame_2 16
+    2300020: Win_nar_frame_2 17
+    2300022: Win_nar_frame_2 18
+    2300024: Win_nar_frame_2 19
+    2300026: Win_nar_frame_2 2
+    2300028: Win_nar_frame_2 20
+    2300030: Win_nar_frame_2 21
+    2300032: Win_nar_frame_2 22
+    2300034: Win_nar_frame_2 23
+    2300036: Win_nar_frame_2 24
+    2300038: Win_nar_frame_2 25
+    2300040: Win_nar_frame_2 26
+    2300042: Win_nar_frame_2 27
+    2300044: Win_nar_frame_2 28
+    2300046: Win_nar_frame_2 29
+    2300048: Win_nar_frame_2 3
+    2300050: Win_nar_frame_2 30
+    2300052: Win_nar_frame_2 31
+    2300054: Win_nar_frame_2 32
+    2300056: Win_nar_frame_2 33
+    2300058: Win_nar_frame_2 34
+    2300060: Win_nar_frame_2 35
+    2300062: Win_nar_frame_2 36
+    2300064: Win_nar_frame_2 37
+    2300066: Win_nar_frame_2 38
+    2300068: Win_nar_frame_2 39
+    2300070: Win_nar_frame_2 4
+    2300072: Win_nar_frame_2 40
+    2300074: Win_nar_frame_2 41
+    2300076: Win_nar_frame_2 42
+    2300078: Win_nar_frame_2 43
+    2300080: Win_nar_frame_2 44
+    2300082: Win_nar_frame_2 45
+    2300084: Win_nar_frame_2 46
+    2300086: Win_nar_frame_2 47
+    2300088: Win_nar_frame_2 48
+    2300090: Win_nar_frame_2 49
+    2300092: Win_nar_frame_2 5
+    2300094: Win_nar_frame_2 50
+    2300096: Win_nar_frame_2 51
+    2300098: Win_nar_frame_2 52
+    2300100: Win_nar_frame_2 53
+    2300102: Win_nar_frame_2 6
+    2300104: Win_nar_frame_2 7
+    2300106: Win_nar_frame_2 8
+    2300108: Win_nar_frame_2 9
+    2300110: Win_nar_glass_1
+    2300112: Win_nar_glass_2
+    2300114: Win_nar_glass_2 1
+    2300116: Win_nar_glass_2 10
+    2300118: Win_nar_glass_2 11
+    2300120: Win_nar_glass_2 12
+    2300122: Win_nar_glass_2 13
+    2300124: Win_nar_glass_2 14
+    2300126: Win_nar_glass_2 15
+    2300128: Win_nar_glass_2 16
+    2300130: Win_nar_glass_2 17
+    2300132: Win_nar_glass_2 18
+    2300134: Win_nar_glass_2 19
+    2300136: Win_nar_glass_2 2
+    2300138: Win_nar_glass_2 20
+    2300140: Win_nar_glass_2 21
+    2300142: Win_nar_glass_2 22
+    2300144: Win_nar_glass_2 23
+    2300146: Win_nar_glass_2 24
+    2300148: Win_nar_glass_2 25
+    2300150: Win_nar_glass_2 26
+    2300152: Win_nar_glass_2 27
+    2300154: Win_nar_glass_2 28
+    2300156: Win_nar_glass_2 29
+    2300158: Win_nar_glass_2 3
+    2300160: Win_nar_glass_2 30
+    2300162: Win_nar_glass_2 31
+    2300164: Win_nar_glass_2 32
+    2300166: Win_nar_glass_2 33
+    2300168: Win_nar_glass_2 34
+    2300170: Win_nar_glass_2 35
+    2300172: Win_nar_glass_2 36
+    2300174: Win_nar_glass_2 37
+    2300176: Win_nar_glass_2 38
+    2300178: Win_nar_glass_2 39
+    2300180: Win_nar_glass_2 4
+    2300182: Win_nar_glass_2 40
+    2300184: Win_nar_glass_2 41
+    2300186: Win_nar_glass_2 42
+    2300188: Win_nar_glass_2 43
+    2300190: Win_nar_glass_2 44
+    2300192: Win_nar_glass_2 45
+    2300194: Win_nar_glass_2 46
+    2300196: Win_nar_glass_2 47
+    2300198: Win_nar_glass_2 48
+    2300200: Win_nar_glass_2 49
+    2300202: Win_nar_glass_2 5
+    2300204: Win_nar_glass_2 50
+    2300206: Win_nar_glass_2 51
+    2300208: Win_nar_glass_2 52
+    2300210: Win_nar_glass_2 53
+    2300212: Win_nar_glass_2 6
+    2300214: Win_nar_glass_2 7
+    2300216: Win_nar_glass_2 8
+    2300218: Win_nar_glass_2 9
+    2300220: Win_nar_glass_3
+    2300222: Win_nar_glass_4
+    2300224: Win_nar_glass_5
+    2300226: Win_nar_glass_6
+    2300228: Win_nar_glass_7
+    2300230: Win_wrk_fr_gird1
+    2300232: Win_wrk_gird2
+    2300234: Win_wrk_gird3
+    2300236: Win_wrk_gird4
+    2300238: Win_wrk_gird5
+    2300240: //RootNode
+    3300000: Win_nar_frame_1
+    3300002: Win_nar_frame_2
+    3300004: Win_nar_frame_2 1
+    3300006: Win_nar_frame_2 10
+    3300008: Win_nar_frame_2 11
+    3300010: Win_nar_frame_2 12
+    3300012: Win_nar_frame_2 13
+    3300014: Win_nar_frame_2 14
+    3300016: Win_nar_frame_2 15
+    3300018: Win_nar_frame_2 16
+    3300020: Win_nar_frame_2 17
+    3300022: Win_nar_frame_2 18
+    3300024: Win_nar_frame_2 19
+    3300026: Win_nar_frame_2 2
+    3300028: Win_nar_frame_2 20
+    3300030: Win_nar_frame_2 21
+    3300032: Win_nar_frame_2 22
+    3300034: Win_nar_frame_2 23
+    3300036: Win_nar_frame_2 24
+    3300038: Win_nar_frame_2 25
+    3300040: Win_nar_frame_2 26
+    3300042: Win_nar_frame_2 27
+    3300044: Win_nar_frame_2 28
+    3300046: Win_nar_frame_2 29
+    3300048: Win_nar_frame_2 3
+    3300050: Win_nar_frame_2 30
+    3300052: Win_nar_frame_2 31
+    3300054: Win_nar_frame_2 32
+    3300056: Win_nar_frame_2 33
+    3300058: Win_nar_frame_2 34
+    3300060: Win_nar_frame_2 35
+    3300062: Win_nar_frame_2 36
+    3300064: Win_nar_frame_2 37
+    3300066: Win_nar_frame_2 38
+    3300068: Win_nar_frame_2 39
+    3300070: Win_nar_frame_2 4
+    3300072: Win_nar_frame_2 40
+    3300074: Win_nar_frame_2 41
+    3300076: Win_nar_frame_2 42
+    3300078: Win_nar_frame_2 43
+    3300080: Win_nar_frame_2 44
+    3300082: Win_nar_frame_2 45
+    3300084: Win_nar_frame_2 46
+    3300086: Win_nar_frame_2 47
+    3300088: Win_nar_frame_2 48
+    3300090: Win_nar_frame_2 49
+    3300092: Win_nar_frame_2 5
+    3300094: Win_nar_frame_2 50
+    3300096: Win_nar_frame_2 51
+    3300098: Win_nar_frame_2 52
+    3300100: Win_nar_frame_2 53
+    3300102: Win_nar_frame_2 6
+    3300104: Win_nar_frame_2 7
+    3300106: Win_nar_frame_2 8
+    3300108: Win_nar_frame_2 9
+    3300110: Win_nar_glass_1
+    3300112: Win_nar_glass_2
+    3300114: Win_nar_glass_2 1
+    3300116: Win_nar_glass_2 10
+    3300118: Win_nar_glass_2 11
+    3300120: Win_nar_glass_2 12
+    3300122: Win_nar_glass_2 13
+    3300124: Win_nar_glass_2 14
+    3300126: Win_nar_glass_2 15
+    3300128: Win_nar_glass_2 16
+    3300130: Win_nar_glass_2 17
+    3300132: Win_nar_glass_2 18
+    3300134: Win_nar_glass_2 19
+    3300136: Win_nar_glass_2 2
+    3300138: Win_nar_glass_2 20
+    3300140: Win_nar_glass_2 21
+    3300142: Win_nar_glass_2 22
+    3300144: Win_nar_glass_2 23
+    3300146: Win_nar_glass_2 24
+    3300148: Win_nar_glass_2 25
+    3300150: Win_nar_glass_2 26
+    3300152: Win_nar_glass_2 27
+    3300154: Win_nar_glass_2 28
+    3300156: Win_nar_glass_2 29
+    3300158: Win_nar_glass_2 3
+    3300160: Win_nar_glass_2 30
+    3300162: Win_nar_glass_2 31
+    3300164: Win_nar_glass_2 32
+    3300166: Win_nar_glass_2 33
+    3300168: Win_nar_glass_2 34
+    3300170: Win_nar_glass_2 35
+    3300172: Win_nar_glass_2 36
+    3300174: Win_nar_glass_2 37
+    3300176: Win_nar_glass_2 38
+    3300178: Win_nar_glass_2 39
+    3300180: Win_nar_glass_2 4
+    3300182: Win_nar_glass_2 40
+    3300184: Win_nar_glass_2 41
+    3300186: Win_nar_glass_2 42
+    3300188: Win_nar_glass_2 43
+    3300190: Win_nar_glass_2 44
+    3300192: Win_nar_glass_2 45
+    3300194: Win_nar_glass_2 46
+    3300196: Win_nar_glass_2 47
+    3300198: Win_nar_glass_2 48
+    3300200: Win_nar_glass_2 49
+    3300202: Win_nar_glass_2 5
+    3300204: Win_nar_glass_2 50
+    3300206: Win_nar_glass_2 51
+    3300208: Win_nar_glass_2 52
+    3300210: Win_nar_glass_2 53
+    3300212: Win_nar_glass_2 6
+    3300214: Win_nar_glass_2 7
+    3300216: Win_nar_glass_2 8
+    3300218: Win_nar_glass_2 9
+    3300220: Win_nar_glass_3
+    3300222: Win_nar_glass_4
+    3300224: Win_nar_glass_5
+    3300226: Win_nar_glass_6
+    3300228: Win_nar_glass_7
+    3300230: Win_wrk_fr_gird1
+    3300232: Win_wrk_gird2
+    3300234: Win_wrk_gird3
+    3300236: Win_wrk_gird4
+    3300238: Win_wrk_gird5
+    3300240: //RootNode
+    4300000: WORKSHOP_1_16
+    4300002: Win_nar_frame_1
+    4300004: Win_nar_glass_1
+    4300006: Win_wrk_gird5
+    4300008: Win_nar_glass_7
+    4300010: Win_wrk_gird4
+    4300012: Win_nar_glass_6
+    4300014: Win_wrk_gird3
+    4300016: Win_nar_glass_5
+    4300018: Win_wrk_gird2
+    4300020: Win_nar_glass_4
+    4300022: Win_nar_glass_3
+    4300024: Win_wrk_fr_gird1
+    4300026: Win_nar_glass_2
+    4300028: Win_nar_frame_2
+    4300030: Win_nar_glass_2
+    4300032: Win_nar_frame_2
+    4300034: Win_nar_glass_2
+    4300036: Win_nar_frame_2
+    4300038: Win_nar_glass_2
+    4300040: Win_nar_frame_2
+    4300042: Win_nar_glass_2
+    4300044: Win_nar_frame_2
+    4300046: Win_nar_glass_2
+    4300048: Win_nar_frame_2
+    4300050: Win_nar_glass_2
+    4300052: Win_nar_frame_2
+    4300054: Win_nar_glass_2
+    4300056: Win_nar_frame_2
+    4300058: Win_nar_glass_2
+    4300060: Win_nar_frame_2
+    4300062: Win_nar_glass_2
+    4300064: Win_nar_frame_2
+    4300066: Win_nar_glass_2
+    4300068: Win_nar_frame_2
+    4300070: Win_nar_glass_2
+    4300072: Win_nar_frame_2
+    4300074: Win_nar_glass_2
+    4300076: Win_nar_frame_2
+    4300078: Win_nar_glass_2
+    4300080: Win_nar_frame_2
+    4300082: Win_nar_glass_2
+    4300084: Win_nar_frame_2
+    4300086: Win_nar_glass_2
+    4300088: Win_nar_frame_2
+    4300090: Win_nar_glass_2
+    4300092: Win_nar_frame_2
+    4300094: Win_nar_glass_2
+    4300096: Win_nar_frame_2
+    4300098: Win_nar_glass_2
+    4300100: Win_nar_frame_2
+    4300102: Win_nar_glass_2
+    4300104: Win_nar_frame_2
+    4300106: Win_nar_glass_2
+    4300108: Win_nar_frame_2
+    4300110: Win_nar_glass_2
+    4300112: Win_nar_frame_2
+    4300114: Win_nar_glass_2
+    4300116: Win_nar_frame_2
+    4300118: Win_nar_glass_2
+    4300120: Win_nar_frame_2
+    4300122: Win_nar_glass_2
+    4300124: Win_nar_frame_2
+    4300126: Win_nar_glass_2
+    4300128: Win_nar_frame_2
+    4300130: Win_nar_glass_2
+    4300132: Win_nar_frame_2
+    4300134: Win_nar_glass_2
+    4300136: Win_nar_frame_2
+    4300138: Win_nar_glass_2
+    4300140: Win_nar_frame_2
+    4300142: Win_nar_glass_2
+    4300144: Win_nar_frame_2
+    4300146: Win_nar_glass_2
+    4300148: Win_nar_frame_2
+    4300150: Win_nar_glass_2
+    4300152: Win_nar_frame_2
+    4300154: Win_nar_glass_2
+    4300156: Win_nar_frame_2
+    4300158: Win_nar_glass_2
+    4300160: Win_nar_frame_2
+    4300162: Win_nar_glass_2
+    4300164: Win_nar_frame_2
+    4300166: Win_nar_glass_2
+    4300168: Win_nar_frame_2
+    4300170: Win_nar_glass_2
+    4300172: Win_nar_frame_2
+    4300174: Win_nar_glass_2
+    4300176: Win_nar_frame_2
+    4300178: Win_nar_glass_2
+    4300180: Win_nar_frame_2
+    4300182: Win_nar_glass_2
+    4300184: Win_nar_frame_2
+    4300186: Win_nar_glass_2
+    4300188: Win_nar_frame_2
+    4300190: Win_nar_glass_2
+    4300192: Win_nar_frame_2
+    4300194: Win_nar_glass_2
+    4300196: Win_nar_frame_2
+    4300198: Win_nar_glass_2
+    4300200: Win_nar_frame_2
+    4300202: Win_nar_glass_2
+    4300204: Win_nar_frame_2
+    4300206: Win_nar_glass_2
+    4300208: Win_nar_frame_2
+    4300210: Win_nar_glass_2
+    4300212: Win_nar_frame_2
+    4300214: Win_nar_glass_2
+    4300216: Win_nar_frame_2
+    4300218: Win_nar_glass_2
+    4300220: Win_nar_frame_2
+    4300222: Win_nar_glass_2
+    4300224: Win_nar_frame_2
+    4300226: Win_nar_glass_2
+    4300228: Win_nar_frame_2
+    4300230: Win_nar_glass_2
+    4300232: Win_nar_frame_2
+    4300234: Win_nar_glass_2
+    4300236: Win_nar_frame_2
+    4300238: Win_nar_glass_2
+    4300240: Win_nar_frame_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

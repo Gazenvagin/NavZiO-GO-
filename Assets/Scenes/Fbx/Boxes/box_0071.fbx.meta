@@ -4,11 +4,19 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Box71
+    100004: Boxes
     400000: //RootNode
+    400002: Box71
+    400004: Boxes
     2100000: lambert1
+    2100002: lambert2
     2300000: //RootNode
+    2300002: Box71
     3300000: //RootNode
+    3300002: Box71
     4300000: Box71
+    4300002: Plan_top
   externalObjects: {}
   materials:
     importMaterials: 1

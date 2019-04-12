@@ -34,6 +34,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Folder
+Assets/Scenes/Scena_01/
 Assets/Add/
 Assets/unity-ui-extensions/
 Assets/SWS/
@@ -41,5 +44,11 @@ Assets/RedwoodForest/
 Assets/Oculus/
 Assets/ExampleAssets/
 Assets/Bakery/
+Assets/Bakery/*.*
 Assets/Editor/x64/Bakery/
 Assets/Demigiant/
+*.hdr
+Assets/BakeryLightmaps/
+Assets/VRPanorama/
+Assets/Standard Assets/
+Assets/SampleScenes/
