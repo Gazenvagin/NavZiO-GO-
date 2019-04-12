@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.0.5.5
+  bundleVersion: 0.0.5.8
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -158,7 +158,7 @@ PlayerSettings:
     Android: com.oculusGO.NavZiO
     Standalone: com.oculus.UnitySample
   buildNumber: {}
-  AndroidBundleVersionCode: 21
+  AndroidBundleVersionCode: 24
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -239,6 +239,7 @@ PlayerSettings:
   tvOSManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
+  iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   clonedFromGUID: 5e732017669dfdd47bef175829bc547e
   templatePackageId: com.unity.template.lightweightvr@1.0.4

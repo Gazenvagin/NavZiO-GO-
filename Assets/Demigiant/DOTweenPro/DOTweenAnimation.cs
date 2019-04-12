@@ -8,7 +8,7 @@ using UnityEngine;
 #if true // UI_MARKER
 using UnityEngine.UI;
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
 using TMPro;
 #endif
 
@@ -21,6 +21,14 @@ namespace DG.Tweening
     [AddComponentMenu("DOTween/DOTween Animation")]
     public class DOTweenAnimation : ABSAnimationComponent
     {
+        #region EVENTS - EDITOR-ONLY
+
+        /// <summary>Used internally by the editor</summary>
+        public static event Action<DOTweenAnimation> OnReset;
+        static void Dispatch_OnReset(DOTweenAnimation anim) { if (OnReset != null) OnReset(anim); }
+
+        #endregion
+
         public bool targetIsSelf = true; // If FALSE allows to set the target manually
         public GameObject targetGO = null; // Used in case targetIsSelf is FALSE
         // If TRUE always uses the GO containing this DOTweenAnimation (and not the one containing the target) as DOTween's SetTarget target
@@ -85,6 +93,11 @@ namespace DG.Tweening
 
             CreateTween();
             _tweenCreated = true;
+        }
+
+        void Reset()
+        {
+            Dispatch_OnReset(this);
         }
 
         void OnDestroy()
@@ -239,7 +252,7 @@ namespace DG.Tweening
 #endif
 #if true // UI_MARKER
                 case TargetType.Image:
-                    tween = ((Image)target).DOColor(endValueColor, duration);
+                    tween = ((Graphic)target).DOColor(endValueColor, duration);
                     break;
                 case TargetType.Text:
                     tween = ((Text)target).DOColor(endValueColor, duration);
@@ -253,7 +266,7 @@ namespace DG.Tweening
                     tween = ((tk2dBaseSprite)target).DOColor(endValueColor, duration);
                     break;
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
                 case TargetType.TextMeshProUGUI:
                     tween = ((TextMeshProUGUI)target).DOColor(endValueColor, duration);
                     break;
@@ -279,7 +292,7 @@ namespace DG.Tweening
 #endif
 #if true // UI_MARKER
                 case TargetType.Image:
-                    tween = ((Image)target).DOFade(endValueFloat, duration);
+                    tween = ((Graphic)target).DOFade(endValueFloat, duration);
                     break;
                 case TargetType.Text:
                     tween = ((Text)target).DOFade(endValueFloat, duration);
@@ -296,7 +309,7 @@ namespace DG.Tweening
                     tween = ((tk2dBaseSprite)target).DOFade(endValueFloat, duration);
                     break;
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
                 case TargetType.TextMeshProUGUI:
                     tween = ((TextMeshProUGUI)target).DOFade(endValueFloat, duration);
                     break;
@@ -321,7 +334,7 @@ namespace DG.Tweening
                     break;
                 }
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
                 switch (targetType) {
                 case TargetType.TextMeshProUGUI:
                     tween = ((TextMeshProUGUI)target).DOText(endValueString, duration, optionalBool0, optionalScrambleMode, optionalString);
@@ -475,9 +488,14 @@ namespace DG.Tweening
         /// <summary>
         /// Restarts the tween
         /// </summary>
+        public override void DORestart()
+        { DORestart(false); }
+        /// <summary>
+        /// Restarts the tween
+        /// </summary>
         /// <param name="fromHere">If TRUE, re-evaluates the tween's start and end values from its current position.
         /// Set it to TRUE when spawning the same DOTweenAnimation in different positions (like when using a pooling system)</param>
-        public override void DORestart(bool fromHere = false)
+        public override void DORestart(bool fromHere)
         {
         	_playCount = -1;
             if (tween == null) {
@@ -592,14 +610,15 @@ namespace DG.Tweening
             int dotIndex = str.LastIndexOf(".");
             if (dotIndex != -1) str = str.Substring(dotIndex + 1);
             if (str.IndexOf("Renderer") != -1 && (str != "SpriteRenderer")) str = "Renderer";
-#if !true // PHYSICS_MARKER
+#if true // PHYSICS_MARKER
             if (str == "Rigidbody") str = "Transform";
 #endif
-#if !true // PHYSICS2D_MARKER
+#if true // PHYSICS2D_MARKER
             if (str == "Rigidbody2D") str = "Transform";
 #endif
-#if !true // UI_MARKER
+#if true // UI_MARKER
             if (str == "RectTransform") str = "Transform";
+            if (str == "RawImage") str = "Image"; // RawImages are managed like Images for DOTweenAnimation (color and fade use Graphic target anyway)
 #endif
             return (TargetType)Enum.Parse(typeof(TargetType), str);
         }

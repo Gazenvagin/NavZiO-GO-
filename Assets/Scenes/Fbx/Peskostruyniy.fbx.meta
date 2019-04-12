@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: ce47eecde9cf3574bb6cb02bf8ad3849
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door155
+    100002: pCube177
+    100004: pCube178
+    100006: pCube179
+    100008: pCube180
+    100010: pCube181
+    100012: pCube182
+    100014: pCube183
+    100016: pCube184
+    100018: pCube185
+    100020: pCube186
+    100022: pCube187
+    100024: pCube188
+    100026: //RootNode
+    100028: Win_nar_frame_1
+    100030: Win_nar_glass_1
+    100032: Win_wd_frame_2
+    100034: Win_wd_frame_2 1
+    100036: Win_wd_frame_2 10
+    100038: Win_wd_frame_2 11
+    100040: Win_wd_frame_2 12
+    100042: Win_wd_frame_2 13
+    100044: Win_wd_frame_2 14
+    100046: Win_wd_frame_2 15
+    100048: Win_wd_frame_2 2
+    100050: Win_wd_frame_2 3
+    100052: Win_wd_frame_2 4
+    100054: Win_wd_frame_2 5
+    100056: Win_wd_frame_2 6
+    100058: Win_wd_frame_2 7
+    100060: Win_wd_frame_2 8
+    100062: Win_wd_frame_2 9
+    100064: Win_wd_glass_1
+    100066: Win_wd_glass_1 1
+    100068: Win_wd_glass_1 10
+    100070: Win_wd_glass_1 11
+    100072: Win_wd_glass_1 12
+    100074: Win_wd_glass_1 13
+    100076: Win_wd_glass_1 14
+    100078: Win_wd_glass_1 15
+    100080: Win_wd_glass_1 2
+    100082: Win_wd_glass_1 3
+    100084: Win_wd_glass_1 4
+    100086: Win_wd_glass_1 5
+    100088: Win_wd_glass_1 6
+    100090: Win_wd_glass_1 7
+    100092: Win_wd_glass_1 8
+    100094: Win_wd_glass_1 9
+    100096: Window_wide1246
+    100098: Window_wide1247
+    100100: Window_wide1248
+    100102: Window_wide1249
+    100104: Window_wide1250
+    100106: Window_wide1251
+    100108: Window_wide1252
+    100110: Window_wide1253
+    100112: Window_wide1254
+    100114: Window_wide1255
+    100116: Window_wide1256
+    100118: Window_wide1257
+    100120: Window_wide1258
+    100122: Window_wide1259
+    100124: Window_wide1260
+    100126: Window_wide1261
+    400000: Door155
+    400002: pCube177
+    400004: pCube178
+    400006: pCube179
+    400008: pCube180
+    400010: pCube181
+    400012: pCube182
+    400014: pCube183
+    400016: pCube184
+    400018: pCube185
+    400020: pCube186
+    400022: pCube187
+    400024: pCube188
+    400026: //RootNode
+    400028: Win_nar_frame_1
+    400030: Win_nar_glass_1
+    400032: Win_wd_frame_2
+    400034: Win_wd_frame_2 1
+    400036: Win_wd_frame_2 10
+    400038: Win_wd_frame_2 11
+    400040: Win_wd_frame_2 12
+    400042: Win_wd_frame_2 13
+    400044: Win_wd_frame_2 14
+    400046: Win_wd_frame_2 15
+    400048: Win_wd_frame_2 2
+    400050: Win_wd_frame_2 3
+    400052: Win_wd_frame_2 4
+    400054: Win_wd_frame_2 5
+    400056: Win_wd_frame_2 6
+    400058: Win_wd_frame_2 7
+    400060: Win_wd_frame_2 8
+    400062: Win_wd_frame_2 9
+    400064: Win_wd_glass_1
+    400066: Win_wd_glass_1 1
+    400068: Win_wd_glass_1 10
+    400070: Win_wd_glass_1 11
+    400072: Win_wd_glass_1 12
+    400074: Win_wd_glass_1 13
+    400076: Win_wd_glass_1 14
+    400078: Win_wd_glass_1 15
+    400080: Win_wd_glass_1 2
+    400082: Win_wd_glass_1 3
+    400084: Win_wd_glass_1 4
+    400086: Win_wd_glass_1 5
+    400088: Win_wd_glass_1 6
+    400090: Win_wd_glass_1 7
+    400092: Win_wd_glass_1 8
+    400094: Win_wd_glass_1 9
+    400096: Window_wide1246
+    400098: Window_wide1247
+    400100: Window_wide1248
+    400102: Window_wide1249
+    400104: Window_wide1250
+    400106: Window_wide1251
+    400108: Window_wide1252
+    400110: Window_wide1253
+    400112: Window_wide1254
+    400114: Window_wide1255
+    400116: Window_wide1256
+    400118: Window_wide1257
+    400120: Window_wide1258
+    400122: Window_wide1259
+    400124: Window_wide1260
+    400126: Window_wide1261
+    2100000: lambert1
+    2300000: pCube177
+    2300002: pCube178
+    2300004: pCube179
+    2300006: pCube180
+    2300008: pCube181
+    2300010: pCube182
+    2300012: pCube183
+    2300014: pCube184
+    2300016: pCube185
+    2300018: pCube186
+    2300020: pCube187
+    2300022: pCube188
+    2300024: //RootNode
+    2300026: Win_nar_frame_1
+    2300028: Win_nar_glass_1
+    2300030: Win_wd_frame_2
+    2300032: Win_wd_frame_2 1
+    2300034: Win_wd_frame_2 10
+    2300036: Win_wd_frame_2 11
+    2300038: Win_wd_frame_2 12
+    2300040: Win_wd_frame_2 13
+    2300042: Win_wd_frame_2 14
+    2300044: Win_wd_frame_2 15
+    2300046: Win_wd_frame_2 2
+    2300048: Win_wd_frame_2 3
+    2300050: Win_wd_frame_2 4
+    2300052: Win_wd_frame_2 5
+    2300054: Win_wd_frame_2 6
+    2300056: Win_wd_frame_2 7
+    2300058: Win_wd_frame_2 8
+    2300060: Win_wd_frame_2 9
+    2300062: Win_wd_glass_1
+    2300064: Win_wd_glass_1 1
+    2300066: Win_wd_glass_1 10
+    2300068: Win_wd_glass_1 11
+    2300070: Win_wd_glass_1 12
+    2300072: Win_wd_glass_1 13
+    2300074: Win_wd_glass_1 14
+    2300076: Win_wd_glass_1 15
+    2300078: Win_wd_glass_1 2
+    2300080: Win_wd_glass_1 3
+    2300082: Win_wd_glass_1 4
+    2300084: Win_wd_glass_1 5
+    2300086: Win_wd_glass_1 6
+    2300088: Win_wd_glass_1 7
+    2300090: Win_wd_glass_1 8
+    2300092: Win_wd_glass_1 9
+    3300000: pCube177
+    3300002: pCube178
+    3300004: pCube179
+    3300006: pCube180
+    3300008: pCube181
+    3300010: pCube182
+    3300012: pCube183
+    3300014: pCube184
+    3300016: pCube185
+    3300018: pCube186
+    3300020: pCube187
+    3300022: pCube188
+    3300024: //RootNode
+    3300026: Win_nar_frame_1
+    3300028: Win_nar_glass_1
+    3300030: Win_wd_frame_2
+    3300032: Win_wd_frame_2 1
+    3300034: Win_wd_frame_2 10
+    3300036: Win_wd_frame_2 11
+    3300038: Win_wd_frame_2 12
+    3300040: Win_wd_frame_2 13
+    3300042: Win_wd_frame_2 14
+    3300044: Win_wd_frame_2 15
+    3300046: Win_wd_frame_2 2
+    3300048: Win_wd_frame_2 3
+    3300050: Win_wd_frame_2 4
+    3300052: Win_wd_frame_2 5
+    3300054: Win_wd_frame_2 6
+    3300056: Win_wd_frame_2 7
+    3300058: Win_wd_frame_2 8
+    3300060: Win_wd_frame_2 9
+    3300062: Win_wd_glass_1
+    3300064: Win_wd_glass_1 1
+    3300066: Win_wd_glass_1 10
+    3300068: Win_wd_glass_1 11
+    3300070: Win_wd_glass_1 12
+    3300072: Win_wd_glass_1 13
+    3300074: Win_wd_glass_1 14
+    3300076: Win_wd_glass_1 15
+    3300078: Win_wd_glass_1 2
+    3300080: Win_wd_glass_1 3
+    3300082: Win_wd_glass_1 4
+    3300084: Win_wd_glass_1 5
+    3300086: Win_wd_glass_1 6
+    3300088: Win_wd_glass_1 7
+    3300090: Win_wd_glass_1 8
+    3300092: Win_wd_glass_1 9
+    4300000: Peskostruyniy
+    4300002: pCube177
+    4300004: pCube178
+    4300006: pCube179
+    4300008: pCube180
+    4300010: pCube181
+    4300012: pCube182
+    4300014: pCube183
+    4300016: pCube184
+    4300018: pCube185
+    4300020: pCube186
+    4300022: pCube187
+    4300024: pCube188
+    4300026: Win_wd_glass_1
+    4300028: Win_wd_frame_2
+    4300030: Win_wd_glass_1
+    4300032: Win_wd_frame_2
+    4300034: Win_wd_glass_1
+    4300036: Win_wd_frame_2
+    4300038: Win_wd_glass_1
+    4300040: Win_wd_frame_2
+    4300042: Win_wd_glass_1
+    4300044: Win_wd_frame_2
+    4300046: Win_wd_glass_1
+    4300048: Win_wd_frame_2
+    4300050: Win_wd_glass_1
+    4300052: Win_wd_frame_2
+    4300054: Win_wd_glass_1
+    4300056: Win_wd_frame_2
+    4300058: Win_wd_glass_1
+    4300060: Win_wd_frame_2
+    4300062: Win_wd_glass_1
+    4300064: Win_wd_frame_2
+    4300066: Win_wd_glass_1
+    4300068: Win_wd_frame_2
+    4300070: Win_wd_glass_1
+    4300072: Win_wd_frame_2
+    4300074: Win_wd_glass_1
+    4300076: Win_wd_frame_2
+    4300078: Win_wd_glass_1
+    4300080: Win_wd_frame_2
+    4300082: Win_nar_frame_1
+    4300084: Win_nar_glass_1
+    4300086: Win_wd_glass_1
+    4300088: Win_wd_frame_2
+    4300090: Win_wd_glass_1
+    4300092: Win_wd_frame_2
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
