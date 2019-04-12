@@ -48,7 +48,7 @@ public class TriggerStopFly : MonoBehaviour
 
                     CTRL_FadeCam.fadeCam.duration = 3.5f;
                     CTRL_FadeCam.fadeCam.DORestartById("fadeCam");
-                    CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
+                    //CTRL_FadeCam.fadeCam.DOPlayById("fadeCam");
 
                     rigCapsul.isKinematic = true;
                     rigCapsul.useGravity = false;

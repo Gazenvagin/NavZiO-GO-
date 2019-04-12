@@ -11,10 +11,11 @@ using DG.Tweening;
 using DG.Tweening.Core;
 using UnityEditor;
 using UnityEngine;
+using DOTweenSettings = DG.Tweening.Core.DOTweenSettings;
 #if true // UI_MARKER
 using UnityEngine.UI;
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
     using TMPro;
 #endif
 
@@ -66,7 +67,7 @@ namespace DG.DOTweenEditor
                 typeof(SpriteRenderer),
 #endif
 #if true // UI_MARKER
-                typeof(Image), typeof(Text),
+                typeof(Image), typeof(Text), typeof(RawImage),
 #endif
                 typeof(Renderer),
             }},
@@ -76,7 +77,7 @@ namespace DG.DOTweenEditor
                 typeof(SpriteRenderer),
 #endif
 #if true // UI_MARKER
-                typeof(Image), typeof(Text), typeof(CanvasGroup),
+                typeof(Image), typeof(Text), typeof(CanvasGroup), typeof(RawImage),
 #endif
                 typeof(Renderer),
             }},
@@ -118,7 +119,7 @@ namespace DG.DOTweenEditor
             { DOTweenAnimationType.Text, new[] { typeof(tk2dTextMesh) } }
         };
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
         static readonly Dictionary<DOTweenAnimationType, Type[]> _TMPAnimationTypeToComponent = new Dictionary<DOTweenAnimationType, Type[]>() {
             { DOTweenAnimationType.Color, new[] { typeof(TextMeshPro), typeof(TextMeshProUGUI) } },
             { DOTweenAnimationType.Fade, new[] { typeof(TextMeshPro), typeof(TextMeshProUGUI) } },
@@ -138,7 +139,7 @@ namespace DG.DOTweenEditor
 #if false // TK2D_MARKER
             "Text",
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
             "Text",
 #endif
 #if true // UI_MARKER
@@ -152,6 +153,7 @@ namespace DG.DOTweenEditor
         static string[] _datString; // String representation of DOTweenAnimation enum (here for caching reasons)
 
         DOTweenAnimation _src;
+        DOTweenSettings _settings;
         bool _runtimeEditMode; // If TRUE allows to change and save stuff at runtime
         bool _refreshRequired; // If TRUE refreshes components data
         int _totComponentsOnSrc; // Used to determine if a Component is added or removed from the source
@@ -178,6 +180,7 @@ namespace DG.DOTweenEditor
         void OnEnable()
         {
             _src = target as DOTweenAnimation;
+            _settings = DOTweenUtilityWindow.GetDOTweenSettings();
 
             onStartProperty = base.serializedObject.FindProperty("onStart");
             onPlayProperty = base.serializedObject.FindProperty("onPlay");
@@ -241,6 +244,7 @@ namespace DG.DOTweenEditor
             }
 
             Undo.RecordObject(_src, "DOTween Animation");
+            Undo.RecordObject(_settings, "DOTween Animation");
 
 //            _src.isValid = Validate(); // Moved down
 
@@ -266,16 +270,26 @@ namespace DG.DOTweenEditor
                     GUILayout.Label("To apply your changes when exiting Play mode, use the Component's upper right menu and choose \"Copy Component\", then \"Paste Component Values\" after exiting Play mode", DeGUI.styles.label.wordwrap);
                 DeGUILayout.EndVBox();
             } else {
+                GUILayout.BeginHorizontal();
                 bool hasManager = _src.GetComponent<DOTweenVisualManager>() != null;
+                EditorGUI.BeginChangeCheck();
+                _settings.showPreviewPanel = hasManager
+                    ? DeGUILayout.ToggleButton(_settings.showPreviewPanel, "Preview Controls", styles.custom.inlineToggle)
+                    : DeGUILayout.ToggleButton(_settings.showPreviewPanel, "Preview Controls", styles.custom.inlineToggle, GUILayout.Width(120));
+                if (EditorGUI.EndChangeCheck()) {
+                    EditorUtility.SetDirty(_settings);
+                    DOTweenPreviewManager.StopAllPreviews();
+                }
                 if (!hasManager) {
                     if (GUILayout.Button(new GUIContent("Add Manager", "Adds a manager component which allows you to choose additional options for this gameObject"))) {
                         _src.gameObject.AddComponent<DOTweenVisualManager>();
                     }
                 }
+                GUILayout.EndHorizontal();
             }
 
             // Preview in editor
-            bool isPreviewing = DOTweenPreviewManager.PreviewGUI(_src);
+            bool isPreviewing = _settings.showPreviewPanel ? DOTweenPreviewManager.PreviewGUI(_src) : false;
 
             EditorGUI.BeginDisabledGroup(isPreviewing);
             // Choose target
@@ -580,7 +594,7 @@ namespace DG.DOTweenEditor
                 }
             }
 #endif
-#if false // TEXTMESHPRO_MARKER
+#if true // TEXTMESHPRO_MARKER
             if (_TMPAnimationTypeToComponent.ContainsKey(_src.animationType)) {
                 foreach (Type t in _TMPAnimationTypeToComponent[_src.animationType]) {
                     srcTarget = targetGO.GetComponent(t);
@@ -703,5 +717,29 @@ namespace DG.DOTweenEditor
         }
 
         #endregion
+    }
+
+    // █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+    // ███ INTERNAL CLASSES ████████████████████████████████████████████████████████████████████████████████████████████████
+    // █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+
+    [InitializeOnLoad]
+    static class Initializer
+    {
+        static Initializer()
+        {
+            DOTweenAnimation.OnReset += OnReset;
+        }
+
+        static void OnReset(DOTweenAnimation src)
+        {
+            DOTweenSettings settings = DOTweenUtilityWindow.GetDOTweenSettings();
+            if (settings == null) return;
+
+            Undo.RecordObject(src, "DOTweenAnimation");
+            src.autoPlay = settings.defaultAutoPlay == AutoPlay.All || settings.defaultAutoPlay == AutoPlay.AutoPlayTweeners;
+            src.autoKill = settings.defaultAutoKill;
+            EditorUtility.SetDirty(src);
+        }
     }
 }
