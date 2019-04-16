@@ -83,7 +83,7 @@ PlayerSettings:
   forceSingleInstance: 0
   resizableWindow: 0
   useMacAppStoreValidation: 0
-  macAppStoreCategory: public.app-category.games
+  macAppStoreCategory: public.app-category.business
   gpuSkinning: 1
   graphicsJobs: 1
   xboxPIXTextureCapture: 0
@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.0.5.8
+  bundleVersion: 0.0.5.9
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,9 +156,10 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.oculusGO.NavZiO
-    Standalone: com.oculus.UnitySample
-  buildNumber: {}
-  AndroidBundleVersionCode: 24
+    Standalone: com.oculus.RosAtom
+  buildNumber:
+    Standalone: 25
+  AndroidBundleVersionCode: 25
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
