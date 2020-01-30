@@ -51,8 +51,8 @@ public class SceneManagerLoad : MonoBehaviour
 
             procent.text = string.Format("{0:0}%", progress * 100);            
 
-            yield return null;
-            Debug.Log("adios");            
+            yield return null;                       
         }
+        Debug.Log("adios"); 
     }
 }

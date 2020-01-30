@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resolution: 2048
   bitmask: 1
-  id: 25
-  sortingID: 4
+  id: 24
+  sortingID: 3
   isImplicit: 0
   area: 0
   totalVertexCount: 0
@@ -31,3 +31,7 @@ MonoBehaviour:
   sssSamples: 16
   sssDensity: 10
   sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  overridePath: 
