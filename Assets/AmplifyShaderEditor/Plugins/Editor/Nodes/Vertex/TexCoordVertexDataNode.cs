@@ -8,7 +8,7 @@ using UnityEditor;
 namespace AmplifyShaderEditor
 {
 	[Serializable]
-	[NodeAttributes( "Vertex TexCoord", "Vertex Data", "Vertex texture coordinates, can be used in both local vertex offset and fragment outputs" )]
+	[NodeAttributes( "Vertex TexCoord", "Vertex Data", "Vertex texture coordinates, can be used in both local vertex offset and fragment outputs", tags: "uv" )]
 	public sealed class TexCoordVertexDataNode : VertexDataNode
 	{
 		[SerializeField]
@@ -47,12 +47,6 @@ namespace AmplifyShaderEditor
 			m_index = EditorGUILayoutIntPopup( Constants.AvailableUVChannelLabel, m_index, Constants.AvailableUVSetsStr, Constants.AvailableUVChannels );
 			if( EditorGUI.EndChangeCheck() )
 			{
-				if( m_index > 3 && m_containerGraph.IsStandardSurface )
-				{
-					UIUtils.ShowMessage( "Standard Surface doesn't allow access to this channel" );
-					m_index = 0;
-				}
-
 				m_currentVertexData = ( m_index == 0 ) ? "texcoord" : "texcoord" + Constants.AvailableUVChannelsStr[ m_index ];
 			}
 		}
@@ -68,7 +62,7 @@ namespace AmplifyShaderEditor
 				if( EditorGUI.EndChangeCheck() )
 				{
 					UpdateOutput();
-					m_dropdownEditing = false;
+					DropdownEditing = false;
 				}
 			}
 		}
@@ -230,16 +224,12 @@ namespace AmplifyShaderEditor
 			{
 				dataCollector.TemplateDataCollectorInstance.SetUVUsage( m_index, m_texcoordSize );
 			}
-		}
-
-		public override void OnMasterNodeReplaced( MasterNode newMasterNode )
-		{
-			base.OnMasterNodeReplaced( newMasterNode );
-			if( m_index > 3 && newMasterNode is StandardSurfaceOutputNode )
+			else if( m_index > 3 )
 			{
-				m_index = 0;
-				UIUtils.ShowMessage( "Resetting channel on Vertex TexCoord node.\nStandard Surface only allows usage of the first four." );
+				dataCollector.AddCustomAppData( string.Format( TemplateHelperFunctions.TexUVFullSemantic, m_index ) );
 			}
 		}
+
+		
 	}
 }

@@ -8,12 +8,13 @@ namespace AmplifyShaderEditor
 	[Serializable]
 	public class TemplateTagsModule : TemplateModuleParent
 	{
-		private const string CustomTagsStr = " SubShader Tags";
+		private const string CustomTagsStr = "Tags";
 		private const string TagNameStr = "Name";
 		private const string TagValueStr = "Value";
 		private const string QueueIndexStr = "Index";
 		private const string QueueLabelStr = "Queue";
 		private const string RenderTypeLabelStr = "Type";
+		private const string CustomRenderTypeLabelStr = "Custom";
 
 		private const float ShaderKeywordButtonLayoutWidth = 15;
 		private UndoParentNode m_currentOwner;
@@ -28,7 +29,7 @@ namespace AmplifyShaderEditor
 
 		private Dictionary<string, CustomTagData> m_availableTagsDict = new Dictionary<string, CustomTagData>();
 
-		public TemplateTagsModule() : base( "SubShader Tags" ) { }
+		public TemplateTagsModule() : base( "Tags" ) { }
 
 		public void CopyFrom( TemplateTagsModule other )
 		{
@@ -167,6 +168,10 @@ namespace AmplifyShaderEditor
 							case TemplateSpecialTags.RenderType:
 							{
 								m_availableTags[ i ].RenderType = (RenderType)m_currentOwner.EditorGUILayoutEnumPopup( RenderTypeLabelStr, m_availableTags[ i ].RenderType );
+								if( m_availableTags[ i ].RenderType == RenderType.Custom )
+								{
+									m_availableTags[ i ].TagValue = m_currentOwner.EditorGUILayoutTextField( CustomRenderTypeLabelStr, m_availableTags[ i ].TagValue );
+								}
 							}
 							break;
 							case TemplateSpecialTags.Queue:
@@ -233,6 +238,60 @@ namespace AmplifyShaderEditor
 			{
 				m_isDirty = true;
 			}
+		}
+
+		//Method used by template options
+		// As such. Render Queue will have value and offset separated by ,
+		public void AddSpecialTag( TemplateSpecialTags tag, TemplateActionItem item )
+		{
+			if( tag == TemplateSpecialTags.None )
+				return;
+
+			int count = m_availableTags.Count;
+			for( int i = 0; i < count; i++ )
+			{
+				if( m_availableTags[ i ].SpecialTag == tag )
+				{
+					switch( tag )
+					{
+						case TemplateSpecialTags.RenderType:
+						{
+							m_availableTags[ i ].RenderType = TemplateHelperFunctions.StringToRenderType[ item.ActionData ];
+							return;
+						}
+						case TemplateSpecialTags.Queue:
+						{
+							
+							m_availableTags[ i ].RenderQueue = TemplateHelperFunctions.StringToRenderQueue[ item.ActionData ];
+							m_availableTags[ i ].RenderQueueOffset = item.ActionDataIdx;
+							m_availableTags[ i ].BuildQueueTagValue();
+							return;
+						}
+					}
+				}
+			}
+
+			CustomTagData data = new CustomTagData();
+			switch( tag )
+			{
+				case TemplateSpecialTags.RenderType:
+				{
+					data.SpecialTag = TemplateSpecialTags.RenderType;
+					data.TagName = "RenderType";
+					data.RenderType = TemplateHelperFunctions.StringToRenderType[ item.ActionData ];
+				}
+				break;
+				case TemplateSpecialTags.Queue:
+				{
+					data.SpecialTag = TemplateSpecialTags.Queue;
+					data.TagName = "Queue";
+					data.RenderQueue = TemplateHelperFunctions.StringToRenderQueue[ item.ActionData ];
+					data.RenderQueueOffset = item.ActionDataIdx;
+					data.BuildQueueTagValue();
+				}
+				break;
+			}
+			m_availableTags.Add( data );
 		}
 
 		void AddTagFromRead( string data )

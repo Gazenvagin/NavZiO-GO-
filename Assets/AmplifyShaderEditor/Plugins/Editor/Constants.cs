@@ -9,6 +9,192 @@ namespace AmplifyShaderEditor
 
 	public struct Constants
 	{
+		public readonly static string[] CustomASEStandardArgsMacros =
+		{
+			"#if defined(SHADER_API_D3D11) || defined(SHADER_API_XBOXONE) || defined(UNITY_COMPILER_HLSLCC)//ASE Args Macros",
+			"#define ASE_TEXTURE2D_ARGS(textureName) Texture2D textureName, SamplerState sampler##textureName",
+			"#define ASE_TEXTURE3D_ARGS(textureName) Texture3D textureName, SamplerState sampler##textureName",
+			"#define ASE_TEXTURECUBE_ARGS(textureName) TextureCube textureName, SamplerState sampler##textureName",
+			"#define ASE_TEXTURE2D_PARAMS(textureName) textureName, sampler##textureName",
+			"#define ASE_TEXTURE3D_PARAMS(textureName) textureName, sampler##textureName",
+			"#define ASE_TEXTURECUBE_PARAMS(textureName) textureName, sampler##textureName",
+			"#define ASE_TEXTURE2D_ARRAY_PARAMS(textureName) textureName, sampler##textureName",
+			"#else//ASE Args Macros",
+			"#define ASE_TEXTURE2D_ARGS(textureName) sampler2D textureName",
+			"#define ASE_TEXTURE3D_ARGS(textureName) sampler3D textureName",
+			"#define ASE_TEXTURECUBE_ARGS(textureName) samplerCUBE textureName",
+			"#define ASE_TEXTURE2D_PARAMS(textureName) textureName",
+			"#define ASE_TEXTURE3D_PARAMS(textureName) textureName",
+			"#define ASE_TEXTURECUBE_PARAMS(textureName) textureName",
+			"#define ASE_TEXTURE2D_ARRAY_PARAMS(textureName) textureName",
+			"#endif//ASE Args Macros\n"
+		};
+		
+		public readonly static string[] CustomASEDeclararionMacros =
+		{
+			"#define ASE_TEXTURE2D(textureName) {0}2D(textureName)",
+			"#define ASE_TEXTURE2D_ARRAY(textureName) {0}2D_ARRAY(textureName)",
+			"#define ASE_TEXTURE3D(textureName) {0}3D(textureName)",
+			"#define ASE_TEXTURECUBE(textureName) {0}CUBE(textureName)\n"
+		};
+
+		public readonly static string[] CustomASEStandarSamplingMacrosHelper =
+		{
+			"#if defined(SHADER_API_D3D11) || defined(SHADER_API_XBOXONE) || defined(UNITY_COMPILER_HLSLCC)//ASE Sampling Macros",
+			"#else//ASE Sampling Macros",
+			"#endif//ASE Sampling Macros\n"
+		};
+
+		public readonly static string[] CustomASESamplingMacros =
+		{
+			"#define ASE_SAMPLE_TEXTURE2D(textureName,{0}coords) {1}2D{2}(textureName,{0}coords)",
+			"#define ASE_SAMPLE_TEXTURE2D_LOD(textureName, {0}coord2, lod) {1}2D{2}_LOD(textureName, {0}coord2, lod)",
+			"#define ASE_SAMPLE_TEXTURE2D_BIAS(textureName,{0}coord2, bias) {1}2D{2}_BIAS(textureName,{0}coord2, bias)",
+			"#define ASE_SAMPLE_TEXTURE2D_GRAD(textureName,{0}coord2, dpdx, dpdy) {1}2D{2}_GRAD(textureName,{0}coord2, dpdx, dpdy)",
+
+			"#define ASE_SAMPLE_TEXTURE3D(textureName,{0}coord3) {1}3D{2}(textureName,{0}coord3)",
+			"#define ASE_SAMPLE_TEXTURE3D_LOD(textureName,{0}coord3, lod) {1}3D{2}_LOD(textureName,{0}coord3, lod)",
+			"#define ASE_SAMPLE_TEXTURE3D_BIAS(textureName,{0}coord3, bias) {1}3D{2}_BIAS(textureName,{0}coord3, bias)",
+			"#define ASE_SAMPLE_TEXTURE3D_GRAD(textureName,{0}coord3, dpdx, dpdy) {1}3D{2}_GRAD(textureName,{0}coord3, dpdx, dpdy)",
+
+			"#define ASE_SAMPLE_TEXTURECUBE(textureName,{0}coord3) {1}CUBE{2}(textureName,{0}coord3)",
+			"#define ASE_SAMPLE_TEXTURECUBE_LOD(textureName,{0}coord3, lod) {1}CUBE{2}_LOD(textureName,{0}coord3, lod)",
+			"#define ASE_SAMPLE_TEXTURECUBE_BIAS(textureName,{0}coord3, bias) {1}CUBE{2}_BIAS(textureName,{0}coord3, bias)\n"
+		};
+
+		// SRP
+		public readonly static string[] CustomASESRPArgsMacros =
+		{
+			"#define ASE_TEXTURE2D_ARGS(textureName) TEXTURE2D(textureName), SAMPLER(textureName)",
+			"#define ASE_TEXTURE3D_ARGS(textureName) TEXTURE3D(textureName), SAMPLER(textureName)",
+			"#define ASE_TEXTURECUBE_ARGS(textureName) TEXTURECUBE(textureName), SAMPLER(textureName)",
+			"#define ASE_TEXTURE2D_PARAMS(textureName) textureName, sampler##textureName",
+			"#define ASE_TEXTURE3D_PARAMS(textureName) textureName, sampler##textureName",
+			"#define ASE_TEXTURECUBE_PARAMS(textureName) textureName, sampler##textureName",
+			"#define ASE_TEXTURE2D_ARRAY_PARAMS(textureName) textureName, sampler##textureName\n"
+		};
+
+		public readonly static string CustomASEStandardSamplerParams = "#define ASE_TEXTURE_PARAMS(textureName) textureName\n";
+		public readonly static string[] CustomASESRPTextureArrayMacros = 
+		{
+			"#define ASE_TEXTURE2D_ARRAY_ARGS(textureName) TEXTURE2D_ARRAY_ARGS(textureName,sampler##textureName)\n" ,
+			"#define ASE_TEXTURE2D_ARRAY_PARAM(textureName) TEXTURE2D_ARRAY_PARAM(textureName,sampler##textureName)\n" ,
+			"#define ASE_SAMPLE_TEXTURE2D_ARRAY(textureName, coord3) textureName.Sample(sampler##textureName, coord3)",
+			"#define ASE_SAMPLE_TEXTURE2D_ARRAY_LOD(textureName, coord3, lod) textureName.SampleLevel(sampler##textureName, coord3, lod)"
+		};
+		public readonly static string CustomASESRPSamplerParams = "#define ASE_TEXTURE_PARAMS(textureName) textureName, sampler##textureName\n";
+
+		public readonly static string[] CustomSRPSamplingMacros =
+		{
+			"#define SAMPLE_TEXTURE3D_GRAD(textureName, samplerName, coord3, dpdx, dpdy) textureName.SampleGrad(samplerName, coord3, dpdx, dpdy)",
+			"#define SAMPLE_TEXTURE3D_BIAS(textureName, samplerName, coord3, bias) textureName.SampleBias(samplerName, coord3, bias)\n"
+		};
+
+		public readonly static Dictionary<TextureType, string> TexDeclarationSRPMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"TEXTURE2D({0}); SAMPLER(sampler{0});"},
+			{ TextureType.Texture3D,"TEXTURE3D({0}); SAMPLER(sampler{0});"},
+			{ TextureType.Cube,"TEXTURECUBE({0}); SAMPLER(sampler{0});"},
+			{ TextureType.Texture2DArray,"TEXTURE2D_ARRAY({0}); SAMPLER(sampler{0});"},
+		};
+
+		public readonly static Dictionary<TextureType, string> SamplerDeclarationSRPMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"SAMPLER(sampler{0});"},
+			{ TextureType.Texture3D,"SAMPLER(sampler{0});"},
+			{ TextureType.Cube,"SAMPLER(sampler{0});"},
+			{ TextureType.Texture2DArray,"SAMPLER(sampler{0});"},
+		};
+		
+		public readonly static Dictionary<TextureType, string> TexDeclarationNoSamplerSRPMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"TEXTURE2D({0});"},
+			{ TextureType.Texture3D,"TEXTURE3D({0});"},
+			{ TextureType.Cube,"TEXTURECUBE({0});"},
+			{ TextureType.Texture2DArray,"TEXTURE2D_ARRAY({0});"},
+		};
+
+		public readonly static Dictionary<TextureType, string> TexSampleSRPMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"SAMPLE_TEXTURE2D{0}({1},sampler{2},{3})"},
+			{ TextureType.Texture3D,"SAMPLE_TEXTURE3D{0}({1},sampler{2},{3})"},
+			{ TextureType.Cube,"SAMPLE_TEXTURECUBE{0}({1},sampler{2},{3})"},
+			{ TextureType.Texture2DArray,"SAMPLE_TEXTURE2D_ARRAY{0}({1},sampler{2},{3})"},
+		};
+
+		public readonly static Dictionary<TextureType, string> TexParams = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"ASE_TEXTURE2D_PARAMS({0})"},
+			{ TextureType.Texture3D,"ASE_TEXTURE3D_PARAMS({0})"},
+			{ TextureType.Cube,"ASE_TEXTURECUBE_PARAMS({0})"},
+			{ TextureType.Texture2DArray,"ASE_TEXTURE2D_ARRAY_PARAMS({0})"},
+		};
+
+		// STANDARD
+
+		public readonly static string[] CustomStandardSamplingMacros =
+		{
+			"#if defined(SHADER_API_D3D11) || defined(SHADER_API_XBOXONE) || defined(UNITY_COMPILER_HLSLCC)//ASE Sampler Macros",
+			"#define UNITY_SAMPLE_TEX2D_LOD(tex,coord,lod) tex.SampleLevel (sampler##tex,coord, lod)",
+			"#define UNITY_SAMPLE_TEX2D_BIAS(tex,coord,bias) tex.SampleBias(sampler##tex,coord,bias)",
+			"#define UNITY_SAMPLE_TEX2D_GRAD(tex,coord,ddx,ddy) tex.SampleGrad(sampler##tex,coord,ddx,ddy)",
+			"#define UNITY_SAMPLE_TEX3D_BIAS(tex,coord,bias) tex.SampleBias(sampler##tex,coord,bias)",
+			"#define UNITY_SAMPLE_TEX3D_GRAD(tex,coord,ddx,ddy) tex.SampleGrad(sampler##tex,coord,ddx,ddy)",
+			"#define UNITY_SAMPLE_TEX2D_SAMPLER_LOD(tex,samplerTex,coord,lod) tex.SampleLevel (samplerTex,coord, lod)",
+			"#define UNITY_SAMPLE_TEX2D_SAMPLER_BIAS(tex,samplerTex,coord,bias) tex.SampleBias(samplerTex,coord,bias)",
+			"#define UNITY_SAMPLE_TEX2D_SAMPLER_GRAD(tex,samplerTex,coord,ddx,ddy) tex.SampleGrad(samplerTex,coord,ddx,ddy)",
+			"#define UNITY_SAMPLE_TEX3D_SAMPLER_BIAS(tex,samplerTex,coord,bias) tex.SampleBias(samplerTex,coord,bias)",
+			"#define UNITY_SAMPLE_TEX3D_SAMPLER_GRAD(tex,samplerTex,coord,ddx,ddy) tex.SampleGrad(samplerTex,coord,ddx,ddy)",
+			"#else//ASE Sampler Macros",
+			"#define UNITY_SAMPLE_TEX2D_LOD(tex,coord,lod) tex2Dlod(tex,float4(coord,0,lod))",
+			"#define UNITY_SAMPLE_TEX2D_BIAS(tex,coord,bias) tex2Dbias(tex,float4(coord,0,bias))",
+			"#define UNITY_SAMPLE_TEX2D_GRAD(tex,coord,ddx,ddy) tex2D(tex,coord,ddx,ddy)",
+			"#define UNITY_SAMPLE_TEX3D_BIAS(tex,coord,bias) tex3Dbias(tex,float4(coord,bias))",
+			"#define UNITY_SAMPLE_TEX3D_GRAD(tex,coord,ddx,ddy) tex3D(tex,coord,ddx,ddy)",
+			"#define UNITY_SAMPLE_TEX2D_SAMPLER_LOD(tex,samplerTex,coord,lod) tex2Dlod(tex,float4(coord,0,lod))",
+			"#define UNITY_SAMPLE_TEX2D_SAMPLER_BIAS(tex,samplerTex,coord,bias) tex2Dbias(tex,float4(coord,0,bias))",
+			"#define UNITY_SAMPLE_TEX2D_SAMPLER_GRAD(tex,samplerTex,coord,ddx,ddy) tex2D(tex,coord,ddx,ddy)",
+			"#define UNITY_SAMPLE_TEX3D_SAMPLER_BIAS(tex,samplerTex,coord,bias) tex3Dbias(tex,float4(coord,bias))",
+			"#define UNITY_SAMPLE_TEX3D_SAMPLER_GRAD(tex,samplerTex,coord,ddx,ddy) tex3D(tex,coord,ddx,ddy)",
+			"#endif//ASE Sampler Macros\n"
+		};
+
+		public readonly static string[] CustomArraySamplingMacros =
+		{
+			"#if defined(UNITY_COMPILER_HLSL2GLSL) || defined(SHADER_TARGET_SURFACE_ANALYSIS)//ASE Array Sampler Macros",
+			"#define ASE_SAMPLE_TEX2DARRAY_GRAD(tex,coord,dx,dy) UNITY_SAMPLE_TEX2DARRAY (tex,coord)",
+			"#else//ASE Array Sampler Macros",
+			"#define ASE_SAMPLE_TEX2DARRAY_GRAD(tex,coord,dx,dy) tex.SampleGrad (sampler##tex,coord,dx,dy)",
+			"#endif//ASE Array Sampler Macros\n"
+		};
+
+		public readonly static Dictionary<TextureType, string> TexDeclarationStandardMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"UNITY_DECLARE_TEX2D({0});"},
+			{ TextureType.Texture3D,"UNITY_DECLARE_TEX3D({0});"},
+			{ TextureType.Cube,"UNITY_DECLARE_TEXCUBE({0});"},
+			{ TextureType.Texture2DArray,"UNITY_DECLARE_TEX2DARRAY({0});"}
+		};
+
+
+		public readonly static Dictionary<TextureType, string> TexDeclarationNoSamplerStandardMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"UNITY_DECLARE_TEX2D({0});"},
+			{ TextureType.Texture3D,"UNITY_DECLARE_TEX3D({0});"},
+			{ TextureType.Cube,"UNITY_DECLARE_TEXCUBE({0});"},
+			{ TextureType.Texture2DArray,"UNITY_DECLARE_TEX2DARRAY({0});"}
+		};
+
+		public readonly static Dictionary<TextureType, string> TexSampleStandardMacros = new Dictionary<TextureType, string>
+		{
+			{ TextureType.Texture2D,"UNITY_SAMPLE_TEX2D{0}({1},{2})"},
+			{ TextureType.Texture3D,"UNITY_SAMPLE_TEX3D{0}({1},{2})"},
+			{ TextureType.Cube,"UNITY_SAMPLE_TEXCUBE{0}({1},{2})"},
+			{ TextureType.Texture2DArray,"UNITY_SAMPLE_TEX2DARRAY{0}({1},{2})"}
+		};
+
+
+		public readonly static char SemiColonSeparator = '@';
 		public readonly static string AppDataFullName = "appdata_full";
 		public readonly static string CustomAppDataFullName = "appdata_full_custom";
 		public readonly static string CustomAppDataFullBody =
@@ -38,6 +224,7 @@ namespace AmplifyShaderEditor
 		public readonly static string UnityAutoLightLib = "AutoLight.cginc";
 		public readonly static string UnityBRDFLib = "UnityStandardBRDF.cginc";
 		public readonly static string LocalValueDecWithoutIdent = "{0} {1} = {2};";
+		public readonly static string CustomTypeLocalValueDecWithoutIdent = "{0} {1} =({0}){2};";
 		public readonly static string LocalValueDefWithoutIdent = "{0} {1} {2};";
 		public readonly static string TilingOffsetFormat = "{0} * {1} + {2}";
 		public static string InvalidPostProcessDatapath = "__DELETED_GUID_Trash";
@@ -86,6 +273,20 @@ namespace AmplifyShaderEditor
 		public readonly static string UnityPBSLightingLib = "UnityPBSLighting.cginc";
 		public readonly static string UnityDeferredLightLib = "UnityDeferredLibrary.cginc";
 		public readonly static string ATSharedLibGUID = "ba242738c4be3324aa88d126f7cc19f9";
+#if UNITY_5_6_OR_NEWER
+		public readonly static string CameraDepthTextureValue = "UNITY_DECLARE_DEPTH_TEXTURE( _CameraDepthTexture );";
+
+#else
+		public readonly static string CameraDepthTextureValue = "uniform sampler2D _CameraDepthTexture;";
+#endif
+		//public readonly static string CameraDepthTextureSRPVar = "TEXTURE2D(_CameraDepthTexture);";
+		//public readonly static string CameraDepthTextureSRPSampler = "SAMPLER(sampler_CameraDepthTexture);";
+		public readonly static string CameraDepthTextureLWEnabler = "REQUIRE_DEPTH_TEXTURE 1";
+
+		public readonly static string CameraDepthTextureTexelSize = "uniform float4 _CameraDepthTexture_TexelSize;";
+		public readonly static string InstanceIdMacro = "UNITY_VERTEX_INPUT_INSTANCE_ID";
+		public readonly static string InstanceIdVariable = "UNITY_GET_INSTANCE_ID({0})";
+
 
 		public readonly static string HelpURL = "http://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor";
 		//public readonly static string NodeCommonUrl = "http://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Nodes#";
@@ -102,7 +303,7 @@ namespace AmplifyShaderEditor
 
 		public readonly static Color PortTextColor = new Color( 1f, 1f, 1f, 0.5f );
 		public readonly static Color PortLockedTextColor = new Color( 1f, 1f, 1f, 0.35f );
-		public readonly static Color BoxSelectionColor = new Color( 1f, 1f, 1f, 0.5f );
+		public readonly static Color BoxSelectionColor = new Color( 0.5f, 0.75f, 1f, 0.33f );
 		public readonly static Color SpecialRegisterLocalVarSelectionColor = new Color( 0.27f, 0.52f, 1.0f, 1f );
 		public readonly static Color SpecialGetLocalVarSelectionColor = new Color( 0.2f, 0.8f, 0.4f, 1f );
 		public readonly static Color NodeSelectedColor = new Color( 0.85f, 0.56f, 0f, 1f );
@@ -164,6 +365,7 @@ namespace AmplifyShaderEditor
 		public readonly static string SubTitleValueFormatStr = "Value( {0} )";
 		public readonly static string SubTitleConstFormatStr = "Const( {0} )";
 		public readonly static string SubTitleVarNameFormatStr = "Var( {0} )";
+		public readonly static string SubTitleRefNameFormatStr = "Ref( {0} )";
 
 		public readonly static string CodeWrapper = "( {0} )";
 
@@ -177,7 +379,7 @@ namespace AmplifyShaderEditor
 		public readonly static string LocalValueDef = LocalVarIdentation + "{0} = {1};\n";
 		public readonly static string CastHelper = "({0}).{1}";
 		public readonly static string PropertyLocalVarDec = "{0} {1} = {0}({2});";
-		public readonly static string UniformDec = "uniform {0} {1};";
+		public readonly static string[] UniformDec = { "uniform {0} {1};", "{0} {1};" };
 
 		public readonly static string PropertyValueLabel = "Value( {0} )";
 		public readonly static string ConstantsValueLabel = "Const( {0} )";
@@ -232,8 +434,7 @@ namespace AmplifyShaderEditor
 		public readonly static string IncidentVecFragStr = InputVarStr + "." + IncidentVecNameStr;
 		public readonly static string IncidentVecVertStr = VertexShaderOutputStr + "." + IncidentVecNameStr;
 		public readonly static string WorldNormalLocalDecStr = "WorldNormalVector( " + Constants.InputVarStr + " , {0}( 0,0,1 ))";
-
-
+		
 		public readonly static string VFaceVariable = "ASEVFace";
 		public readonly static string VFaceInput = "half ASEVFace : VFACE";
 
@@ -246,11 +447,11 @@ namespace AmplifyShaderEditor
 		public readonly static string[] OverallInvalidChars = { "\r", "\n", "\\", " ", ".", ">", ",", "<", "\'", "\"", ";", ":", "[", "{", "]", "}", "=", "+", "`", "~", "/", "?", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-" };
 		public readonly static string[] ShaderInvalidChars = { "\r", "\n", "\\", "\'", "\"", };
 		public readonly static string[] EnumInvalidChars = { "\r", "\n", "\\", ".", ">", ",", "<", "\'", "\"", ";", ":", "[", "{", "]", "}", "=", "+", "`", "~", "/", "?", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-" };
-		public readonly static string[] AttrInvalidChars = { "\r", "\n", "\\", ".", ">", "<", "\'", "\"", ";", ":", "[", "{", "]", "}", "=", "+", "`", "~", "/", "?", "!", "@", "#", "$", "%", "^", "&", "*" };
+		public readonly static string[] AttrInvalidChars = { "\r", "\n", "\\", ">", "<", "\'", "\"", ";", ":", "[", "{", "]", "}", "=", "+", "`", "~", "/", "?", "!", "@", "#", "$", "%", "^", "&", "*" };
 
 		public readonly static string[] WikiInvalidChars = { "#", "<", ">", "[", "]", "|", "{", "}", "%", "+", "?", "\\", "/", ",", ";", "." };
 
-		public readonly static Dictionary<string, string> UrlReplacementStringValues = new Dictionary<string, string>()
+		public readonly static string[,] UrlReplacementStringValues = 
 		{
 			{ " = ", "Equals" },
 			{ " == ", "Equals" },
@@ -263,11 +464,13 @@ namespace AmplifyShaderEditor
 			{ " \u2264 ", "LessOrEqual" },
 			{ " <= ", "LessOrEqual" },
 			{ " ", "_" },
-			{ "[", "" },
-			{ "]", "" }
+			{ "[", string.Empty },
+			{ "]", string.Empty }
 		};
 
-		public readonly static Dictionary<string, string> ReplacementStringValues = new Dictionary<string, string>()
+		public readonly static int UrlReplacementStringValuesLen = UrlReplacementStringValues.Length / 2;
+
+		public readonly static string[,] ReplacementStringValues =
 		{
 			{ " = ", "Equals" },
 			{ " == ", "Equals" },
@@ -280,6 +483,7 @@ namespace AmplifyShaderEditor
 			{ " \u2264 ", "LessOrEqual" },
 			{ " <= ", "LessOrEqual" }
 		};
+		public readonly static int ReplacementStringValuesLen = ReplacementStringValues.Length / 2;
 
 		public readonly static string InternalData = "INTERNAL_DATA";
 

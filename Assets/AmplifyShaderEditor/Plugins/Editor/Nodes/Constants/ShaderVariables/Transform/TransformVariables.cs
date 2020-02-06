@@ -95,7 +95,41 @@ namespace AmplifyShaderEditor
 		public override string GenerateShaderForOutput( int outputId, ref MasterNodeDataCollector dataCollector, bool ignoreLocalvar )
 		{
 			base.GenerateShaderForOutput( outputId, ref dataCollector, ignoreLocalvar );
-			return m_selectedType.ToString();
+			if( dataCollector.IsTemplate && dataCollector.IsSRP )
+			{
+				switch( m_selectedType )
+				{
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_MVP:
+						return "mul(GetWorldToHClipMatrix(),GetObjectToWorldMatrix())";
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_MV:
+						return "mul( GetWorldToViewMatrix(),GetObjectToWorldMatrix())";
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_V:
+						return "GetWorldToViewMatrix()";
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_P:
+						return "GetViewToHClipMatrix()";
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_VP:
+						return "GetWorldToHClipMatrix()";
+					case BuiltInShaderTransformTypes._Object2World:
+						return "GetObjectToWorldMatrix()";
+					case BuiltInShaderTransformTypes._World2Object:
+						return "GetWorldToObjectMatrix()";
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_T_MV:
+					case BuiltInShaderTransformTypes.UNITY_MATRIX_IT_MV:
+					default:
+					{
+						UIUtils.ShowMessage( UniqueId, "Matrix not declared natively on SRP. Must create it manually inside ASE" );
+						return "float4x4(" +
+								"1,0,0,0," +
+								"0,1,0,0," +
+								"0,0,1,0," +
+								"0,0,0,1)";
+					}
+				}
+			}
+			else
+			{
+				return m_selectedType.ToString();
+			}
 		}
 
 		public override void ReadFromString( ref string[] nodeParams )
@@ -112,11 +146,11 @@ namespace AmplifyShaderEditor
 				switch( selectedTypeStr )
 				{
 					default: Debug.LogException( e );break;
-					case "UNITY_MATRIX_TEXTURE0":UIUtils.ShowMessage("Texture 0 matrix is no longer supported",MessageSeverity.Warning);break;
-					case "UNITY_MATRIX_TEXTURE1":UIUtils.ShowMessage("Texture 1 matrix is no longer supported",MessageSeverity.Warning);break;
-					case "UNITY_MATRIX_TEXTURE2":UIUtils.ShowMessage("Texture 2 matrix is no longer supported",MessageSeverity.Warning);break;
-					case "UNITY_MATRIX_TEXTURE3":UIUtils.ShowMessage("Texture 3 matrix is no longer supported",MessageSeverity.Warning); break;
-					case "unity_Scale": UIUtils.ShowMessage( "Scale matrix is no longer supported", MessageSeverity.Warning ); break;
+					case "UNITY_MATRIX_TEXTURE0":UIUtils.ShowMessage( UniqueId, "Texture 0 matrix is no longer supported",MessageSeverity.Warning);break;
+					case "UNITY_MATRIX_TEXTURE1":UIUtils.ShowMessage( UniqueId, "Texture 1 matrix is no longer supported",MessageSeverity.Warning);break;
+					case "UNITY_MATRIX_TEXTURE2":UIUtils.ShowMessage( UniqueId, "Texture 2 matrix is no longer supported",MessageSeverity.Warning);break;
+					case "UNITY_MATRIX_TEXTURE3":UIUtils.ShowMessage( UniqueId, "Texture 3 matrix is no longer supported",MessageSeverity.Warning); break;
+					case "unity_Scale": UIUtils.ShowMessage( UniqueId, "Scale matrix is no longer supported", MessageSeverity.Warning ); break;
 				}
 			}
 

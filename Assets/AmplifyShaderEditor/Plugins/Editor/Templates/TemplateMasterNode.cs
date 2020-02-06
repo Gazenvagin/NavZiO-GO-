@@ -61,6 +61,7 @@ namespace AmplifyShaderEditor
 			m_masterNodeCategory = 1;// First Template
 			m_marginPreviewLeft = 20;
 			m_insideSize.y = 60;
+			m_customPrecision = true;
 		}
 
 		public override void ReleaseResources()
@@ -299,7 +300,7 @@ namespace AmplifyShaderEditor
 			DrawShaderName();
 			DrawCurrentShaderType();
 			EditorGUI.BeginChangeCheck();
-			DrawPrecisionProperty();
+			DrawPrecisionProperty( false );
 			if( EditorGUI.EndChangeCheck() )
 				ContainerGraph.CurrentPrecision = m_currentPrecisionType;
 
@@ -502,6 +503,11 @@ namespace AmplifyShaderEditor
 				validBody = m_currentTemplate.FillTemplateBody( m_currentTemplate.BlendData.BlendOpId, ref shaderBody, m_blendOpHelper.CurrentBlendOp ) && validBody;
 			}
 
+			if( m_currentTemplate.BlendData.ValidAlphaToMask )
+			{
+				validBody = m_currentTemplate.FillTemplateBody( m_currentTemplate.BlendData.AlphaToMaskId, ref shaderBody, m_blendOpHelper.CurrentAlphaToMask ) && validBody;
+			}
+
 			if( m_currentTemplate.DepthData.ValidZWrite )
 			{
 				validBody = m_currentTemplate.FillTemplateBody( m_currentTemplate.DepthData.ZWriteModeId, ref shaderBody, m_depthOphelper.CurrentZWriteMode ) && validBody;
@@ -662,6 +668,7 @@ namespace AmplifyShaderEditor
 				Debug.LogException( e, this );
 			}
 			m_containerGraph.CurrentCanvasMode = NodeAvailability.TemplateShader;
+			m_containerGraph.CurrentPrecision = m_currentPrecisionType;
 		}
 
 		public override void WriteToString( ref string nodeInfo, ref string connectionsInfo )

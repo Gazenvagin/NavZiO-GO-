@@ -133,7 +133,7 @@ namespace AmplifyShaderEditor
 							if( attribute.ShortcutKey != KeyCode.None && type != null )
 								m_shortcutTypes.Add( attribute.ShortcutKey, new ShortcutKeyData( type, attribute.Name ) );
 
-							ContextMenuItem newItem = new ContextMenuItem( attribute, type, attribute.Name, attribute.Category, attribute.Description, null, attribute.ShortcutKey );
+							ContextMenuItem newItem = new ContextMenuItem( attribute, type, attribute.Name, attribute.Tags, attribute.Category, attribute.Description, null, attribute.ShortcutKey );
 							if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags, NodeAvailability.SurfaceShader ) )
 								m_items.Add( newItem );
 							else if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags, currentGraph.ParentWindow.CurrentNodeAvailability ) )
@@ -173,12 +173,15 @@ namespace AmplifyShaderEditor
 
 			for( int i = 0; i < functionCount; i++ )
 			{
-				NodeAttributes attribute = new NodeAttributes( allFunctions[ i ].FunctionName, allFunctions[ i ].CustomNodeCategory, allFunctions[ i ].Description, KeyCode.None, true, 0, int.MaxValue, typeof( AmplifyShaderFunction ) );
-				System.Type type = typeof( FunctionNode );
+				if( !allFunctions[ i ].Hidden )
+				{
+					NodeAttributes attribute = new NodeAttributes( allFunctions[ i ].FunctionName, allFunctions[ i ].CustomNodeCategory, allFunctions[ i ].Description, KeyCode.None, true, 0, int.MaxValue, typeof( AmplifyShaderFunction ) );
+					System.Type type = typeof( FunctionNode );
 
-				ContextMenuItem newItem = new ContextMenuItem( attribute, type, attribute.Name, attribute.Category, attribute.Description, allFunctions[ i ], attribute.ShortcutKey );
-				m_items.Add( newItem );
-				m_itemFunctions.Add( newItem );
+					ContextMenuItem newItem = new ContextMenuItem( attribute, type, attribute.Name, attribute.Tags, attribute.Category, attribute.Description, allFunctions[ i ], attribute.ShortcutKey );
+					m_items.Add( newItem );
+					m_itemFunctions.Add( newItem );
+				}
 			}
 
 			//Sort out the final list by name
@@ -260,6 +263,14 @@ namespace AmplifyShaderEditor
 			if( m_shortcutTypes.ContainsKey( key ) )
 			{
 				m_shortcutTypes[ key ].IsPressed = false;
+			}
+		}
+
+		public void ResetShortcutKeyStates()
+		{
+			foreach( KeyValuePair<KeyCode, ShortcutKeyData> kvp in m_shortcutTypes )
+			{
+				kvp.Value.IsPressed = false;
 			}
 		}
 

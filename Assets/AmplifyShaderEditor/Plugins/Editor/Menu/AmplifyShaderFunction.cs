@@ -96,6 +96,14 @@ public class AmplifyShaderFunction : ScriptableObject
 		set { m_previewPosition = value; }
 	}
 
+	[SerializeField]
+	private bool m_hidden = false;
+	public bool Hidden
+	{
+		get { return m_hidden; }
+		set { m_hidden = value; }
+	}
+
 	public void UpdateDirectivesList()
 	{
 		m_additionalDirectives.CleanNullDirectives();
@@ -112,7 +120,17 @@ public class AmplifyShaderFunction : ScriptableObject
 			m_additionalDirectives.AddItems( AdditionalLineType.Pragma, m_additionalPragmas.PragmaList );
 			m_additionalPragmas.PragmaList.Clear();
 		}
+	}
 
+	public void ResetDirectivesOrigin()
+	{
+		//if( UIUtils.CurrentShaderVersion() < 16807 )
+		// Although the correct version was 1.6.7 rev 07 this issue was only detected on v1.7.1. rev 00
+		// So to avoid potential incorrect saves over shader functions, I decided to broaden up the version range
+		if( UIUtils.CurrentShaderVersion() < 17101 )
+		{
+			m_additionalDirectives.ResetDirectivesOrigin();
+		}
 	}
 }
 

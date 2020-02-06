@@ -31,7 +31,7 @@ namespace AmplifyShaderEditor
 		{
 			base.CommonInit( uniqueId );
 			m_freeType = false;
-
+			m_showVariableMode = true;
 		}
 
 		public override void AfterCommonInit()

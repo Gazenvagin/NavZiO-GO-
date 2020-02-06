@@ -52,7 +52,7 @@ public class CTRL_Info : MonoBehaviour
                 StartCoroutine( CloseInfo() );
 
                 CTRL_FadeInfo.fadeInfo.targetGO = infoShelf[0];                
-                CTRL_FadeInfo.fadeInfo.animationType = DOTweenAnimationType.Fade;
+                CTRL_FadeInfo.fadeInfo.animationType = DOTweenAnimation.AnimationType.Fade;
                 CTRL_FadeInfo.fadeInfo.delay = 0f;
                 CTRL_FadeInfo.fadeInfo.duration = 1f;
                 CTRL_FadeInfo.fadeInfo.isFrom = true;
