@@ -10,5 +10,5 @@ Plugins:<br>
 • SWS<br>
 • unity-ui-extensions<br>
 • VRPanorama<br>
-• RedwoodForest<br>
-• 
+• Polyground Nature 1.7<br>
+• ProBuilder
