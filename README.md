@@ -11,4 +11,8 @@ Plugins:<br>
 • unity-ui-extensions<br>
 • VRPanorama<br>
 • Polyground Nature 1.7<br>
+<<<<<<< HEAD
 • ProBuilder
+=======
+• ProBuilder
+>>>>>>> ffe1e3a3b02b36683807715253cd041188fa7a33
