@@ -136,7 +136,7 @@ QualitySettings:
     billboardsFaceCameraPosition: 1
     vSyncCount: 0
     lodBias: 1
-    maximumLODLevel: 0
+    maximumLODLevel: 2
     streamingMipmapsActive: 0
     streamingMipmapsAddAllCameras: 1
     streamingMipmapsMemoryBudget: 512
@@ -222,4 +222,6 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality: {}
+  m_PerPlatformDefaultQuality:
+    Android: 2
+    Standalone: 0
