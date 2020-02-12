@@ -12,3 +12,4 @@ Plugins:<br>
 • VRPanorama<br>
 • Polyground Nature 1.7<br>
 • ProBuilder<br>
+• Easy Input for Gear VR<br>
